@@ -4,6 +4,6 @@
 
 #include "CHumanPeasant.h"
 
-void CHumanPeasant::build() {
+void CHumanPeasant::build(CPoint _coordinates) {
 
 }

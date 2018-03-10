@@ -12,9 +12,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f921664e-afe9-4439-b2c6-85f3118425e6" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/CTownHall.cpp" afterPath="$PROJECT_DIR$/CTownHall.cpp" />
-      <change beforePath="$PROJECT_DIR$/CTownHall.h" afterPath="$PROJECT_DIR$/CTownHall.h" />
-      <change beforePath="$PROJECT_DIR$/IUnit.h" afterPath="$PROJECT_DIR$/IUnit.h" />
+      <change beforePath="$PROJECT_DIR$/CHumanPeasant.cpp" afterPath="$PROJECT_DIR$/CHumanPeasant.cpp" />
+      <change beforePath="$PROJECT_DIR$/CHumanPeasant.h" afterPath="$PROJECT_DIR$/CHumanPeasant.h" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,30 +40,10 @@
         <entry file="file://$PROJECT_DIR$/CTownHall.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="378">
-              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding>
                 <element signature="e#109#131#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IUnit.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/IUnit.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CWarrior.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CWarrior.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -89,11 +68,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CTownHall.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CTownHall.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CTownHall.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="36">
-              <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+              <caret line="2" column="2" lean-forward="true" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CHumanPeasant.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CHumanPeasant.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="15" column="88" lean-forward="true" selection-start-line="15" selection-start-column="88" selection-end-line="15" selection-end-column="88" />
+              <folding>
+                <element signature="e#118#139#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CHumanPeasant.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CHumanPeasant.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -145,12 +146,12 @@
         <option value="$PROJECT_DIR$/CWarrior.cpp" />
         <option value="$PROJECT_DIR$/CPeasant.cpp" />
         <option value="$PROJECT_DIR$/CPeasant.h" />
-        <option value="$PROJECT_DIR$/CHumanPeasant.h" />
-        <option value="$PROJECT_DIR$/CHumanPeasant.cpp" />
         <option value="$PROJECT_DIR$/IUnit.h" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/CTownHall.h" />
         <option value="$PROJECT_DIR$/CTownHall.cpp" />
+        <option value="$PROJECT_DIR$/CHumanPeasant.h" />
+        <option value="$PROJECT_DIR$/CHumanPeasant.cpp" />
       </list>
     </option>
   </component>
@@ -236,12 +237,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1520705756147</updated>
-      <workItem from="1520705758954" duration="12072000" />
+      <workItem from="1520705758954" duration="13002000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12072000" />
+    <option name="totallyTimeSpent" value="13002000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1857" height="1092" extended-state="6" />
@@ -278,14 +279,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CHumanPeasant.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -298,14 +291,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CHumanPeasant.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -393,7 +378,7 @@
     <entry file="file://$PROJECT_DIR$/CTownHall.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding>
             <element signature="e#109#131#0" expanded="true" />
           </folding>
@@ -403,7 +388,25 @@
     <entry file="file://$PROJECT_DIR$/CTownHall.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
-          <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+          <caret line="2" column="2" lean-forward="true" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CHumanPeasant.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="88" lean-forward="true" selection-start-line="15" selection-start-column="88" selection-end-line="15" selection-end-column="88" />
+          <folding>
+            <element signature="e#118#139#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CHumanPeasant.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
