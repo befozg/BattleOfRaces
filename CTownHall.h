@@ -13,7 +13,8 @@ public:
     CTownHall() = default;
     ~CTownHall() = default;
 
-    virtual CPeasant* createPeasant();
+    virtual CPeasant* createPeasant() = 0;
+
 private:
 
 };
