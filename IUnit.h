@@ -29,4 +29,5 @@ protected:
     CPoint Coordinates;
     int Level;
 };
+
 #endif //BATTLEOFRACES_IUNIT_H
