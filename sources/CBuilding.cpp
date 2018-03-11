@@ -2,7 +2,7 @@
 // Created by karen on 10.03.18.
 //
 
-#include "CBuilding.h"
+#include "../headers/CBuilding.h"
 
 CBuilding::CBuilding(){
     Health = 0;

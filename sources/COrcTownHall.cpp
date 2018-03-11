@@ -2,8 +2,8 @@
 // Created by karen on 11.03.18.
 //
 
-#include "COrcTownHall.h"
-#include "COrcPeasant.h"
+#include "../headers/COrcTownHall.h"
+#include "../headers/COrcPeasant.h"
 
 COrcTownHall::COrcTownHall(CPoint _coordinates) {
     Coordinates = _coordinates;

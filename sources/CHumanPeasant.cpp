@@ -2,7 +2,7 @@
 // Created by dmitry on 10.03.18.
 //
 
-#include "CHumanPeasant.h"
+#include "../headers/CHumanPeasant.h"
 
 CHumanPeasant::CHumanPeasant() {
     Power = 10;

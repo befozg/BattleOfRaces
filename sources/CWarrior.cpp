@@ -2,7 +2,7 @@
 // Created by dmitry on 10.03.18.
 //
 
-#include "CWarrior.h"
+#include "../headers/CWarrior.h"
 
 CWarrior::CWarrior(): Speed(0) {}
 

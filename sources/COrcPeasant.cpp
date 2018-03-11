@@ -2,7 +2,7 @@
 // Created by dmitry on 11.03.18.
 //
 
-#include "COrcPeasant.h"
+#include "../headers/COrcPeasant.h"
 
 COrcPeasant::COrcPeasant() {
     Power = 10;

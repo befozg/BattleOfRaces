@@ -2,7 +2,7 @@
 // Created by dmitry on 11.03.18.
 //
 
-#include "CHumanInfant.h"
+#include "../headers/CHumanInfant.h"
 
 CHumanInfant::CHumanInfant() {
     Health = 200;

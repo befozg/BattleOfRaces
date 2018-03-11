@@ -2,5 +2,5 @@
 // Created by dmitry on 11.03.18.
 //
 
-#include "CInfant.h"
+#include "../headers/CInfant.h"
 

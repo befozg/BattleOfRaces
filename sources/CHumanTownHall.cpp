@@ -2,8 +2,8 @@
 // Created by karen on 11.03.18.
 //
 
-#include "CHumanTownHall.h"
-#include "CHumanPeasant.h"
+#include "../headers/CHumanTownHall.h"
+#include "../headers/CHumanPeasant.h"
 
 CHumanTownHall::CHumanTownHall(CPoint _coordinates) {
     Coordinates = _coordinates;

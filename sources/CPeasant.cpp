@@ -2,7 +2,7 @@
 // Created by dmitry on 10.03.18.
 //
 
-#include "CPeasant.h"
+#include "../headers/CPeasant.h"
 
 CPeasant::CPeasant() {
     Health = 100;

@@ -2,7 +2,7 @@
 // Created by dmitry on 11.03.18.
 //
 
-#include "CElfPeasant.h"
+#include "../headers/CElfPeasant.h"
 
 CElfPeasant::CElfPeasant() {
     Power = 10;
