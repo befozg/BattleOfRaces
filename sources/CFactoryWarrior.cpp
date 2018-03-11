@@ -11,7 +11,7 @@ const int LevelHealthK = 20;
 CWarrior* CFactoryWarrior::create(WarriorID _warriorID, CPoint _coordinates) {
     switch (_warriorID) {
         case WarriorID::HumanPeasant:
-            CPeasant* HumanPeasant = new CPeasant();
+            CPeasant* HumanPeasant;
             HumanPeasant->setLevel(1);
             HumanPeasant->setHealth(PeasantHealth + (HumanPeasant->getLevel() - 1) * LevelHealthK);
             HumanPeasant->setPower(10);

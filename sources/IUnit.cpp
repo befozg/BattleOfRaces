@@ -2,7 +2,7 @@
 // Created by karen on 10.03.18.
 //
 
-#include "../headers/IUnit.h"
+#include "IUnit.h"
 
 CPoint::CPoint(): X(0), Y(0) {};
 

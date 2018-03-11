@@ -2,7 +2,7 @@
 // Created by dmitry on 10.03.18.
 //
 
-#include "../headers/CWarrior.h"
+#include "CWarrior.h"
 
 void CWarrior::move(const CPoint _coordinates) {
     // нужен БФС и работа с графами для достижения точки

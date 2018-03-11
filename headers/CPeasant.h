@@ -9,7 +9,7 @@
 
 class CPeasant : public CWarrior {
 public:
-    CPeasant() = default;
+    CPeasant();
     ~CPeasant() = default;
 
     void harvestWood();
