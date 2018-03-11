@@ -2,8 +2,7 @@
 // Created by karen on 11.03.18.
 //
 
-#include "../headers/CHumanTownHall.h"
-#include "../headers/CHumanPeasant.h"
+#include "CHumanTownHall.h"
 
 CHumanTownHall::CHumanTownHall(CPoint _coordinates) {
     Coordinates = _coordinates;
@@ -14,6 +13,5 @@ CHumanTownHall::CHumanTownHall(CPoint _coordinates) {
 }
 
 CPeasant* CHumanTownHall::createPeasant() {
-    CHumanPeasant* Peasant = new CHumanPeasant[];
-    return Peasant;
+
 }

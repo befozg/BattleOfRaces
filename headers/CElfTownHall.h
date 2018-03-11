@@ -11,7 +11,7 @@
 class CElfTownHall : public CTownHall {
 public:
     CElfTownHall(CPoint _coordinates);
-    ~COrcTownHall() = default;
+    ~CElfTownHall() = default;
 
     CPeasant* createPeasant();
 

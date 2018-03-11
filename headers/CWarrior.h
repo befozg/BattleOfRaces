@@ -9,11 +9,14 @@
 
 class CWarrior : public IUnit {
 public:
-    CWarrior();
+    CWarrior() = default;
     ~CWarrior() = default;
 
     void move(const CPoint _coordinates);
     virtual void attack(const CPoint _coordinates);
+
+    int getSpeed();
+    void setSpeed(int _speed);
 
 protected:
     int Speed;

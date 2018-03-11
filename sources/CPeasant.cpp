@@ -4,11 +4,6 @@
 
 #include "../headers/CPeasant.h"
 
-CPeasant::CPeasant() {
-    Health = 100;
-
-}
-
 void CPeasant::harvestWood() {
     // за один ход добавляем один "лес" в переменную Wood
 

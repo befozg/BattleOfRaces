@@ -2,8 +2,7 @@
 // Created by karen on 11.03.18.
 //
 
-#include "../headers/CElfTownHall.h"
-#include "../headers/CElfPeasant.h"
+#include "CElfTownHall.h"
 
 CElfTownHall::CElfTownHall(CPoint _coordinates) {
     Coordinates = _coordinates;
@@ -14,6 +13,5 @@ CElfTownHall::CElfTownHall(CPoint _coordinates) {
 }
 
 CPeasant* CElfTownHall::createPeasant() {
-    CElfPeasant* Peasant = new CElfPeasant[];
-    return Peasant;
+
 }

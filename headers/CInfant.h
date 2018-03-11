@@ -12,7 +12,7 @@ public:
     CInfant() = default;
     ~CInfant() = default;
 
-protected:
+private:
 
 };
 

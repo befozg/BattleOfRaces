@@ -22,6 +22,18 @@ public:
 
     virtual void attack(const CPoint _coordinates) = 0;
 
+    int getHealth();
+    int getPower();
+    int getAttackDistance();
+    int getLevel();
+    CPoint getCoordinates();
+
+    void setHealth(int _health);
+    void setPower(int _power);
+    void setAttackDistance(int _attackDistance);
+    void setLevel(int _level);
+    void setCoordinates(CPoint _coordinates);
+
 protected:
     int Health;
     int Power;

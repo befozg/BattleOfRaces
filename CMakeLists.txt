@@ -3,7 +3,11 @@ project(BattleOfRaces1)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(BattleOfRaces1 main.cpp sources/CBuilding.cpp headers/CBuilding.h headers/CFarm.h sources/CHumanPeasant.cpp headers/CHumanPeasant.h sources/CPeasant.cpp headers/CPeasant.h headers/CTownHall.h sources/CTownHall.cpp sources/CWarrior.cpp headers/CWarrior.h
-        headers/IUnit.h sources/IUnit.cpp sources/CFarm.cpp sources/CBarack.cpp headers/CBarack.h headers/CTowerOfWizard.h sources/CTowerOfWizard.cpp headers/CCannonTower.h sources/CCannonTower.cpp sources/CElfPeasant.cpp
-        headers/CElfPeasant.h sources/COrcPeasant.cpp headers/COrcPeasant.h headers/CHumanTownHall.h sources/CHumanTownHall.cpp sources/COrcTownHall.cpp headers/COrcTownHall.h sources/CElfTownHall.cpp
-        headers/CElfTownHall.h sources/CInfant.cpp headers/CInfant.h sources/CHumanInfant.cpp headers/CHumanInfant.h)
+include_directories(headers sources)
+
+add_executable(BattleOfRaces1 main.cpp sources/CBuilding.cpp headers/CBuilding.h headers/CFarm.h sources/CPeasant.cpp headers/CPeasant.h headers/CTownHall.h sources/CTownHall.cpp sources/CWarrior.cpp headers/CWarrior.h
+        headers/IUnit.h sources/IUnit.cpp sources/CFarm.cpp sources/CBarack.cpp headers/CBarack.h headers/CTowerOfWizard.h sources/CTowerOfWizard.cpp headers/CCannonTower.h sources/CCannonTower.cpp
+        headers/CHumanTownHall.h sources/CHumanTownHall.cpp sources/COrcTownHall.cpp headers/COrcTownHall.h sources/CElfTownHall.cpp
+        headers/CElfTownHall.h sources/CInfant.cpp headers/CInfant.h headers/CHorseman.h headers/CFactoryWarrior.h sources/CFactoryWarrior.cpp headers/CArcher.h sources/CArcher.cpp sources/CHorseman.cpp headers/CWizzard.h sources/CWizzard.cpp headers/CCatapult.h sources/CCatapult.cpp)
+
+target_link_libraries(BattleOfRaces1 headers)

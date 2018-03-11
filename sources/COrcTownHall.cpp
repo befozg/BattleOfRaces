@@ -2,8 +2,7 @@
 // Created by karen on 11.03.18.
 //
 
-#include "../headers/COrcTownHall.h"
-#include "../headers/COrcPeasant.h"
+#include "COrcTownHall.h"
 
 COrcTownHall::COrcTownHall(CPoint _coordinates) {
     Coordinates = _coordinates;
@@ -14,6 +13,5 @@ COrcTownHall::COrcTownHall(CPoint _coordinates) {
 }
 
 CPeasant* COrcTownHall::createPeasant() {
-    COrcPeasant* Peasant = new COrcPeasant[];
-    return Peasant;
+
 }
