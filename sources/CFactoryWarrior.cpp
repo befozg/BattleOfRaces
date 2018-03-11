@@ -5,6 +5,8 @@
 #include <CInfant.h>
 #include "CFactoryWarrior.h"
 #include "CPeasant.h"
+#include "CArcher.h"
+#include "CHorseman.h"
 
 const int StartLevel = 1;
 
@@ -26,6 +28,18 @@ const int OrcInfantHealth = 200;
 
 const int ElfInfantPower = 50;
 const int ElfInfantHealth = 200;
+
+const int ArcherSpeed = 1;
+const int ArcherAttackDistance = 3;
+const int ArcherLevelHealthK = 20;
+const int ArcherHealth = 100;
+const int ArcherPower = 30;
+
+const int HorsemanSpeed = 2;
+const int HorsemanAttackDistance = 1;
+const int HorsemanLevelHealthK = 30;
+const int HorsemanHealth = 150;
+const int HorsemanPower = 40;
 
 CWarrior* CFactoryWarrior::create(WarriorID _warriorID, CPoint _coordinates) {
     switch (_warriorID) {
@@ -93,6 +107,72 @@ CWarrior* CFactoryWarrior::create(WarriorID _warriorID, CPoint _coordinates) {
             ElfInfant->setHealth(ElfInfantHealth + (ElfInfant->getLevel() - 1) * InfantLevelHealthK);
             ElfInfant->setCoordinates(_coordinates);
             return ElfInfant;
+        }
+
+        case WarriorID::HumanArcher: {
+            CArcher *HumanArcher = new CArcher;
+            HumanArcher->setLevel(StartLevel);
+            HumanArcher->setSpeed(ArcherSpeed);
+            HumanArcher->setAttackDistance(ArcherAttackDistance);
+            HumanArcher->setHealth(ArcherHealth + (HumanArcher->getLevel() - 1) * ArcherLevelHealthK);
+            HumanArcher->setPower(ArcherPower);
+            HumanArcher->setCoordinates(_coordinates);
+            return HumanArcher;
+        }
+
+        case WarriorID::OrcArcher: {
+            CArcher *OrcArcher = new CArcher;
+            OrcArcher->setLevel(StartLevel);
+            OrcArcher->setSpeed(ArcherSpeed);
+            OrcArcher->setAttackDistance(ArcherAttackDistance);
+            OrcArcher->setHealth(ArcherHealth + (OrcArcher->getLevel() - 1) * ArcherLevelHealthK);
+            OrcArcher->setPower(ArcherPower);
+            OrcArcher->setCoordinates(_coordinates);
+            return OrcArcher;
+        }
+
+        case WarriorID::ElfArcher: {
+            CArcher *ElfArcher = new CArcher;
+            ElfArcher->setLevel(StartLevel);
+            ElfArcher->setSpeed(ArcherSpeed);
+            ElfArcher->setAttackDistance(ArcherAttackDistance);
+            ElfArcher->setHealth(ArcherHealth + (ElfArcher->getLevel() - 1) * ArcherLevelHealthK);
+            ElfArcher->setPower(ArcherPower);
+            ElfArcher->setCoordinates(_coordinates);
+            return ElfArcher;
+        }
+
+        case WarriorID::HumanHorseman: {
+            CHorseman *HumanHorseman = new CHorseman;
+            HumanHorseman->setLevel(StartLevel);
+            HumanHorseman->setSpeed(HorsemanSpeed);
+            HumanHorseman->setAttackDistance(HorsemanAttackDistance);
+            HumanHorseman->setHealth(HorsemanHealth + (HumanHorseman->getLevel() - 1) * HorsemanLevelHealthK);
+            HumanHorseman->setPower(HorsemanPower);
+            HumanHorseman->setCoordinates(_coordinates);
+            return HumanHorseman;
+        }
+
+        case WarriorID::OrcHorseman: {
+            CHorseman *OrcHorseman = new CHorseman;
+            OrcHorseman->setLevel(StartLevel);
+            OrcHorseman->setSpeed(HorsemanSpeed);
+            OrcHorseman->setAttackDistance(HorsemanAttackDistance);
+            OrcHorseman->setHealth(HorsemanHealth + (OrcHorseman->getLevel() - 1) * HorsemanLevelHealthK);
+            OrcHorseman->setPower(HorsemanPower);
+            OrcHorseman->setCoordinates(_coordinates);
+            return OrcHorseman;
+        }
+
+        case WarriorID::ElfHorseman: {
+            CHorseman *ElfHorseman = new CHorseman;
+            ElfHorseman->setLevel(StartLevel);
+            ElfHorseman->setSpeed(HorsemanSpeed);
+            ElfHorseman->setAttackDistance(HorsemanAttackDistance);
+            ElfHorseman->setHealth(HorsemanHealth + (ElfHorseman->getLevel() - 1) * HorsemanLevelHealthK);
+            ElfHorseman->setPower(HorsemanPower);
+            ElfHorseman->setCoordinates(_coordinates);
+            return ElfHorseman;
         }
     }
 
