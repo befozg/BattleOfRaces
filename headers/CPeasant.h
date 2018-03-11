@@ -9,12 +9,12 @@
 
 class CPeasant : public CWarrior {
 public:
-    CPeasant();
+    CPeasant() = default;
     ~CPeasant() = default;
 
     void harvestWood();
     void harvestMine();
-    virtual void build();
+    void build();
 
 private:
 

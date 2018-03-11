@@ -17,7 +17,7 @@ public:
 
 class IUnit {
 public:
-    IUnit();
+    IUnit() = default;
     ~IUnit() = default;
 
     virtual void attack(const CPoint _coordinates) = 0;
