@@ -2,18 +2,16 @@
 // Created by dmitry on 11.03.18.
 //
 
-#ifndef BATTLEOFRACES_CELFPEASANT_H
-#define BATTLEOFRACES_CELFPEASANT_H
+#ifndef BATTLEOFRACES_CHUMANINFANT_H
+#define BATTLEOFRACES_CHUMANINFANT_H
 
-#include "CPeasant.h"
+#include "CInfant.h"
 
-class CElfPeasant : public CPeasant {
+class CHumanInfant : public CInfant {
 public:
-    CElfPeasant();
-    CElfPeasant(CPoint _coordinates);
-    ~CElfPeasant() = default;
-
-    virtual void build(CPoint _coordinates); // [ADD] 1-st parameter is CBuildingFactory
+    CHumanInfant();
+    CHumanInfant(CPoint _coordinates);
+    ~CHumanInfant();
 
     int getHealth();
     int getPower();
@@ -33,4 +31,5 @@ private:
 
 };
 
-#endif //BATTLEOFRACES_CELFPEASANT_H
+
+#endif //BATTLEOFRACES_CHUMANINFANT_H
