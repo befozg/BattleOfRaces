@@ -9,10 +9,10 @@
 
 class CBuilding : public IUnit {
 public:
-    CBuilding();
+    CBuilding() = default;
     ~CBuilding() = default;
 
-    virtual void attack(const CPoint _coordinates) = 0;
+    virtual void attack(const CPoint _coordinates) ;
 
 protected:
     int Size;

@@ -4,7 +4,6 @@
 
 #include "CBuilding.h"
 
-CBuilding::CBuilding(){
-    Health = 0;
-    Size = 0;
-};
+void CBuilding::attack(const CPoint _coordinates) {
+    //
+}

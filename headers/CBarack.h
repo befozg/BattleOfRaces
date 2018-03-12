@@ -14,7 +14,7 @@ public:
     CBarack() = default;
     ~CBarack() = default;
 
-    virtual CWarrior* create() = 0;
+    CWarrior* create();
 
 private:
 
