@@ -12,6 +12,6 @@ COrcTownHall::COrcTownHall(CPoint _coordinates) {
     AttackDistance = 0;
 }
 
-CPeasant* COrcTownHall::createPeasant() {
+CWarrior* COrcTownHall::createPeasant() {
 
 }

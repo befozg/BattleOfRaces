@@ -14,5 +14,3 @@ add_executable(BattleOfRaces main.cpp sources/CBuilding.cpp headers/CBuilding.h 
         sources/CFactoryWarrior.cpp headers/CArcher.h sources/CArcher.cpp sources/CHorseman.cpp headers/CWizzard.h
         sources/CWizzard.cpp headers/CCatapult.h sources/CCatapult.cpp sources/CFactoryWarrior.cpp headers/CFactoryBuilding.h
         sources/CFactoryBuilding.cpp)
-
-#target_link_libraries(BattleOfRaces headers)

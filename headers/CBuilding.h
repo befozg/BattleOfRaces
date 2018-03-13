@@ -10,7 +10,7 @@
 class CBuilding : public IUnit {
 public:
     CBuilding() = default;
-    ~CBuilding() = default;
+    virtual ~CBuilding() = default;
 
     virtual void attack(const CPoint _coordinates) ;
 

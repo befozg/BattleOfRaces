@@ -8,19 +8,19 @@ CPoint::CPoint(): X(0), Y(0) {};
 
 CPoint::CPoint(int _x, int _y): X(_x), Y(_y) {};
 
-int IUnit::getHealth() {
+int IUnit::getHealth() const{
     return Health;
 }
-int IUnit::getPower() {
+int IUnit::getPower() const{
     return Power;
 }
-int IUnit::getAttackDistance() {
+int IUnit::getAttackDistance() const{
     return AttackDistance;
 }
-CPoint IUnit::getCoordinates() {
+CPoint IUnit::getCoordinates() const{
     return Coordinates;
 }
-int IUnit::getLevel() {
+int IUnit::getLevel() const{
     return Level;
 }
 

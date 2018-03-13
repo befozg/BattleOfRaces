@@ -18,21 +18,21 @@ public:
 class IUnit {
 public:
     IUnit() = default;
-    ~IUnit() = default;
+    virtual ~IUnit() = default;
 
     virtual void attack(const CPoint _coordinates) = 0;
 
-    int getHealth();
-    int getPower();
-    int getAttackDistance();
-    int getLevel();
-    CPoint getCoordinates();
+    int getHealth() const;
+    int getPower() const;
+    int getAttackDistance() const;
+    int getLevel() const;
+    CPoint getCoordinates() const;
 
-    void setHealth(int _health);
-    void setPower(int _power);
-    void setAttackDistance(int _attackDistance);
-    void setLevel(int _level);
-    void setCoordinates(CPoint _coordinates);
+    virtual void setHealth(int _health);
+    virtual void setPower(int _power);
+    virtual void setAttackDistance(int _attackDistance);
+    virtual void setLevel(int _level);
+    virtual void setCoordinates(CPoint _coordinates);
 
 protected:
     int Health;

@@ -12,7 +12,7 @@ public:
     COrcTownHall(CPoint _coordinates);
     ~COrcTownHall() = default;
 
-    CPeasant* createPeasant();
+    CWarrior* createPeasant();
 
 private:
 };

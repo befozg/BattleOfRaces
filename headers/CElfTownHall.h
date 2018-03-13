@@ -13,7 +13,7 @@ public:
     CElfTownHall(CPoint _coordinates);
     ~CElfTownHall() = default;
 
-    CPeasant* createPeasant();
+    CWarrior* createPeasant();
 
 private:
 };

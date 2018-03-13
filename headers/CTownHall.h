@@ -6,14 +6,14 @@
 #define BATTLEOFRACES_CTOWNHALL_H
 
 #include "CBuilding.h"
-#include "CPeasant.h"
+#include "CWarrior.h"
 
 class CTownHall : public CBuilding {
 public:
     CTownHall() = default;
     ~CTownHall() = default;
 
-    CPeasant* createPeasant();
+    CWarrior* createPeasant();
 
 private:
 

@@ -12,6 +12,6 @@ CElfTownHall::CElfTownHall(CPoint _coordinates) {
     AttackDistance = 0;
 }
 
-CPeasant* CElfTownHall::createPeasant() {
+CWarrior* CElfTownHall::createPeasant() {
 
 }
