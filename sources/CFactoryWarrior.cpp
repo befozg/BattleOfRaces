@@ -3,6 +3,8 @@
 //
 
 #include <CInfant.h>
+#include <CWizzard.h>
+#include <CCatapult.h>
 #include "CFactoryWarrior.h"
 #include "CPeasant.h"
 #include "CArcher.h"
@@ -40,6 +42,18 @@ const int HorsemanAttackDistance = 1;
 const int HorsemanLevelHealthK = 30;
 const int HorsemanHealth = 150;
 const int HorsemanPower = 40;
+
+const int WizzardSpeed = 1;
+const int WizzardAttackDistance = 1;
+const int WizzardLevelHealthK = 20;
+const int WizzardHealth = 100;
+const int WizzardPower = 10;
+
+const int CatapultSpeed = 2;
+const int CatapultAttackDistance = 2;
+const int CatapultLevelHealthK = 40;
+const int CatapultHealth = 300;
+const int CatapultPower = 150;
 
 CWarrior* CFactoryWarrior::create(WarriorID _warriorID, CPoint _coordinates) {
     switch (_warriorID) {
@@ -173,6 +187,72 @@ CWarrior* CFactoryWarrior::create(WarriorID _warriorID, CPoint _coordinates) {
             ElfHorseman->setPower(HorsemanPower);
             ElfHorseman->setCoordinates(_coordinates);
             return ElfHorseman;
+        }
+
+        case WarriorID::HumanWizzard: {
+            CWizzard *HumanWizzard = new CWizzard;
+            HumanWizzard->setLevel(StartLevel);
+            HumanWizzard->setSpeed(WizzardSpeed);
+            HumanWizzard->setAttackDistance(WizzardAttackDistance);
+            HumanWizzard->setHealth(WizzardHealth + (HumanWizzard->getLevel() - 1) * WizzardLevelHealthK);
+            HumanWizzard->setPower(WizzardPower);
+            HumanWizzard->setCoordinates(_coordinates);
+            return HumanWizzard;
+        }
+
+        case WarriorID::OrcWizzard: {
+            CWizzard *OrcWizzard = new CWizzard;
+            OrcWizzard->setLevel(StartLevel);
+            OrcWizzard->setSpeed(WizzardSpeed);
+            OrcWizzard->setAttackDistance(WizzardAttackDistance);
+            OrcWizzard->setHealth(WizzardHealth + (OrcWizzard->getLevel() - 1) * WizzardLevelHealthK);
+            OrcWizzard->setPower(WizzardPower);
+            OrcWizzard->setCoordinates(_coordinates);
+            return OrcWizzard;
+        }
+
+        case WarriorID::ElfWizzard: {
+            CWizzard *ElfWizzard = new CWizzard;
+            ElfWizzard->setLevel(StartLevel);
+            ElfWizzard->setSpeed(WizzardSpeed);
+            ElfWizzard->setAttackDistance(WizzardAttackDistance);
+            ElfWizzard->setHealth(WizzardHealth + (ElfWizzard->getLevel() - 1) * WizzardLevelHealthK);
+            ElfWizzard->setPower(WizzardPower);
+            ElfWizzard->setCoordinates(_coordinates);
+            return ElfWizzard;
+        }
+
+        case WarriorID::HumanCatapult: {
+            CCatapult *HumanCatapult = new CCatapult;
+            HumanCatapult->setLevel(StartLevel);
+            HumanCatapult->setSpeed(CatapultSpeed);
+            HumanCatapult->setAttackDistance(CatapultAttackDistance);
+            HumanCatapult->setHealth(CatapultHealth + (HumanCatapult->getLevel() - 1) * CatapultLevelHealthK);
+            HumanCatapult->setPower(CatapultPower);
+            HumanCatapult->setCoordinates(_coordinates);
+            return HumanCatapult;
+        }
+
+        case WarriorID::OrcCatapult: {
+            CCatapult *OrcCatapult = new CCatapult;
+            OrcCatapult->setLevel(StartLevel);
+            OrcCatapult->setSpeed(CatapultSpeed);
+            OrcCatapult->setAttackDistance(CatapultAttackDistance);
+            OrcCatapult->setHealth(CatapultHealth + (OrcCatapult->getLevel() - 1) * CatapultLevelHealthK);
+            OrcCatapult->setPower(CatapultPower);
+            OrcCatapult->setCoordinates(_coordinates);
+            return OrcCatapult;
+        }
+
+        case WarriorID::ElfCatapult: {
+            CCatapult *ElfCatapult = new CCatapult;
+            ElfCatapult->setLevel(StartLevel);
+            ElfCatapult->setSpeed(CatapultSpeed);
+            ElfCatapult->setAttackDistance(CatapultAttackDistance);
+            ElfCatapult->setHealth(CatapultHealth + (ElfCatapult->getLevel() - 1) * CatapultLevelHealthK);
+            ElfCatapult->setPower(CatapultPower);
+            ElfCatapult->setCoordinates(_coordinates);
+            return ElfCatapult;
         }
     }
 

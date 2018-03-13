@@ -12,7 +12,7 @@ public:
     CHumanTownHall(CPoint _coordinates);
     ~CHumanTownHall() = default;
 
-    CPeasant* createPeasant();
+    CWarrior* createPeasant(); // у тебя тут возвращал указатель на CPeasant, но моя фабрика возвращает указатель на CWarrior. Я тебе исправил "Дима"
 
 private:
 };

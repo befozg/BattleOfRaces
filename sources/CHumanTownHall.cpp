@@ -3,6 +3,7 @@
 //
 
 #include "CHumanTownHall.h"
+#include "CFactoryWarrior.h"
 
 CHumanTownHall::CHumanTownHall(CPoint _coordinates) {
     Coordinates = _coordinates;
@@ -12,6 +13,6 @@ CHumanTownHall::CHumanTownHall(CPoint _coordinates) {
     AttackDistance = 0;
 }
 
-CPeasant* CHumanTownHall::createPeasant() {
+CWarrior* CHumanTownHall::createPeasant() {
 
 }

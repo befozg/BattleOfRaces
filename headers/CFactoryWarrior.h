@@ -12,21 +12,21 @@ enum WarriorID {
     HumanInfant,
     HumanHorseman,
     HumanArcher,
-    HumanHealer,
+    HumanWizzard,
     HumanCatapult,
 
     OrcPeasant,
     OrcInfant,
     OrcHorseman,
     OrcArcher,
-    OrcHealer,
+    OrcWizzard,
     OrcCatapult,
 
     ElfPeasant,
     ElfInfant,
     ElfHorseman,
     ElfArcher,
-    ElfHealer,
+    ElfWizzard,
     ElfCatapult
 };
 
