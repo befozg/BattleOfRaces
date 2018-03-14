@@ -7,10 +7,12 @@
 
 
 #include "CTownHall.h"
+#include "CFactoryBuilding.h"
 
 class CElfTownHall : public CTownHall {
 public:
-    CElfTownHall(CPoint _coordinates);
+    CElfTownHall();
+    CElfTownHall(BuildingID _buildingID);
     ~CElfTownHall() = default;
 
     CWarrior* createPeasant();

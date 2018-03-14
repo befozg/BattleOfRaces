@@ -6,11 +6,12 @@
 #define BATTLEOFRACES1_TOWEROFWIZARD_H
 
 #include "CBuilding.h"
-
+#include "CFactoryBuilding.h"
 class CTowerOfWizard : public CBuilding
 {
 public:
-    CTowerOfWizard() = default;
+    CTowerOfWizard() ;
+    CTowerOfWizard(BuildingID _buildingID) ;
     ~CTowerOfWizard() = default;
 
     void attack(const CPoint _coordinates);

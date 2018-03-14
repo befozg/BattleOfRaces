@@ -6,10 +6,10 @@
 #define BATTLEOFRACES1_CORCTOWNHALL_H
 
 #include "CTownHall.h"
-
+#include "CFactoryBuilding.h"
 class COrcTownHall : public CTownHall {
 public:
-    COrcTownHall(CPoint _coordinates);
+    COrcTownHall();
     ~COrcTownHall() = default;
 
     CWarrior* createPeasant();

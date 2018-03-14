@@ -28,12 +28,12 @@ enum BuildingID {
     ElfCannonTower,
 };
 
-class CFactoryWarrior {
+class CFactoryBuilding {
 public:
-    CFactoryWarrior() = default;
-    ~CFactoryWarrior() = default;
+    CFactoryBuilding() = default;
+    ~CFactoryBuilding() = default;
 
-    static CBuilding* create(BuildingID _buildingID, CPoint _coordinates);
+    static CBuilding* create(BuildingID _buildingID);
 
 private:
 

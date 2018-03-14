@@ -4,9 +4,8 @@
 
 #include "CElfTownHall.h"
 
-CElfTownHall::CElfTownHall(CPoint _coordinates) {
-    Coordinates = _coordinates;
-    Health = 300;
+CElfTownHall::CElfTownHall() {
+    Health = 10000;
     Power = 0;
     Level = 1;
     AttackDistance = 0;

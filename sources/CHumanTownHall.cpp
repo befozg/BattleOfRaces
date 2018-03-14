@@ -3,11 +3,9 @@
 //
 
 #include "CHumanTownHall.h"
-#include "CFactoryWarrior.h"
 
-CHumanTownHall::CHumanTownHall(CPoint _coordinates) {
-    Coordinates = _coordinates;
-    Health = 300;
+CHumanTownHall::CHumanTownHall() {
+    Health = 10000;
     Power = 0;
     Level = 1;
     AttackDistance = 0;

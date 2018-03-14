@@ -6,10 +6,11 @@
 #define BATTLEOFRACES1_CHUMANTOWNHALL_H
 
 #include "CTownHall.h"
-
+#include "CFactoryBuilding.h"
 class CHumanTownHall : public CTownHall {
 public:
-    CHumanTownHall(CPoint _coordinates);
+    CHumanTownHall();
+    CHumanTownHall(CBuilding _buildingID);
     ~CHumanTownHall() = default;
 
     CWarrior* createPeasant(); // у тебя тут возвращал указатель на CPeasant, но моя фабрика возвращает указатель на CWarrior. Я тебе исправил "Дима"

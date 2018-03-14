@@ -6,11 +6,13 @@
 #define BATTLEOFRACES1_CCANNONTOWER_H
 
 #include "CBuilding.h"
+#include "CFactoryBuilding.h"
 
 class CCanonTower : public CBuilding
 {
 public:
-    CCanonTower() = default;
+    CCanonTower();
+    CCanonTower(BuildingID _buildingID);
     ~CCanonTower() = default;
 
     void attack(const CPoint _coordinates);
