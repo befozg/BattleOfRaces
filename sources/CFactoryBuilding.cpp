@@ -44,8 +44,8 @@ const int TowerOfWizardAttackDistance = 10;
 const int TowerOfWizardLevelHealthK = 100;
 const int TowerOfWizardPower = 100;
 
-CBuilding* CFactoryWarrior::create(BuildingID _warriorID, CPoint _coordinates) {
-    switch (_warriorID) {
+CBuilding* CFactoryBuilding::create(BuildingID _buildingID, CPoint _coordinates) {
+    switch (_buildingID) {
         case BuildingID::HumanTownHall: {
             CTownHall *HumanTownHall = new CTownHall;
             HumanTownHall->setLevel(StartLevel);

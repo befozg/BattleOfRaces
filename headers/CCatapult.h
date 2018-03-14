@@ -6,10 +6,12 @@
 #define BATTLEOFRACES1_CCATAPULT_H
 
 #include "CWarrior.h"
+#include "CFactoryWarrior.h"
 
 class CCatapult : public CWarrior {
 public:
     CCatapult() = default;
+    CCatapult(WarriorID _warriorID);
     ~CCatapult() = default;
 
     int getAttackRadius();
