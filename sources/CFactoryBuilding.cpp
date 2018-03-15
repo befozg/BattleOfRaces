@@ -44,6 +44,7 @@ const int TowerOfWizardAttackDistance = 10;
 const int TowerOfWizardLevelHealthK = 100;
 const int TowerOfWizardPower = 100;
 
+
 CBuilding* CFactoryBuilding::create(BuildingID _buildingID) {
     switch (_buildingID) {
         case BuildingID::HumanTownHall: {

@@ -35,7 +35,7 @@ public:
     CFactoryWarrior() = default;
     ~CFactoryWarrior() = default;
 
-    static CWarrior* create(WarriorID _warriorID, CPoint _coordinates);
+    static CWarrior* create(WarriorID _warriorID);
 
 private:
 

@@ -6,10 +6,12 @@
 #define BATTLEOFRACES_CINFANT_H
 
 #include "CWarrior.h"
+#include "CFactoryWarrior.h"
 
 class CInfant : public CWarrior {
 public:
     CInfant() = default;
+    CInfant(WarriorID _warriorID);
     ~CInfant() = default;
 
 private:

@@ -6,10 +6,12 @@
 #define BATTLEOFRACES_CPEASANT_H
 
 #include "CWarrior.h"
+#include "CFactoryWarrior.h"
 
 class CPeasant : public CWarrior {
 public:
     CPeasant() = default;
+    CPeasant(WarriorID _warriorID);
     ~CPeasant() = default;
 
     void harvestWood();
