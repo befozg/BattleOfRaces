@@ -10,7 +10,7 @@
 class CTowerOfWizard : public CBuilding
 {
 public:
-    CTowerOfWizard() ;
+    CTowerOfWizard() = default ;
     CTowerOfWizard(BuildingID _buildingID) ;
     ~CTowerOfWizard() = default;
 

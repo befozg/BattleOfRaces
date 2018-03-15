@@ -6,12 +6,13 @@
 #define BATTLEOFRACES_CFACTORYFARM_H
 
 #include "CFactoryBuilding.h"
+#include "CFarm.h"
 class CFactoryFarm : public CFactoryBuilding {
 public:
     CFactoryFarm() = default;
     ~CFactoryFarm() = default;
 
-    static CFactoryFarm* create(BuildingID _buildingID);
+    static CFarm* create(BuildingID _buildingID);
 
 private:
 

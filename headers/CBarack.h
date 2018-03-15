@@ -16,7 +16,7 @@ public:
     CBarack(BuildingID _buildingID);
     ~CBarack() = default;
 
-    CWarrior* create();
+    CWarrior* createWarior();
 
 private:
 

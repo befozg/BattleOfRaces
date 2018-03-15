@@ -11,11 +11,12 @@
 class CCanonTower : public CBuilding
 {
 public:
-    CCanonTower();
+    CCanonTower() = default;
     CCanonTower(BuildingID _buildingID);
     ~CCanonTower() = default;
 
     void attack(const CPoint _coordinates);
 private:
 };
+
 #endif //BATTLEOFRACES1_CCANNONTOWER_H

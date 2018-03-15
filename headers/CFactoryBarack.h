@@ -13,13 +13,14 @@
 #define BATTLEOFRACES_CFACTORYTOWNHALL_H
 
 #include "CFactoryBuilding.h"
+#include "CBarack.h"
 
 class CFactoryBarack : public CFactoryBuilding {
 public:
     CFactoryBarack() = default;
     ~CFactoryBarack() = default;
 
-    static CFactoryBarack* create(BuildingID _buildingID);
+    static CBarack* create(BuildingID _buildingID);
 
 private:
 

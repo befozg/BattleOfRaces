@@ -6,13 +6,13 @@
 #define BATTLEOFRACES_CFACTORYTOWNHALL_H
 
 #include "CFactoryBuilding.h"
-
+#include "CTownHall.h"
 class CFactoryTownHall : public CFactoryBuilding {
 public:
     CFactoryTownHall() = default;
     ~CFactoryTownHall() = default;
 
-    static CFactoryTownHall* create(BuildingID _buildingID);
+    static CTownHall* create(BuildingID _buildingID);
 
 private:
 

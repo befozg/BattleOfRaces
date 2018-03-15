@@ -6,10 +6,10 @@
 #define BATTLEOFRACES_TESTS_H
 
 #include <gtest/gtest.h>
-#include "CHumanTownHall.h"
+#include "CTownHall.h"
 
 TEST(CHumanTownHall__Test, create__Test) {
-    CHumanTownHall *HumanTH = new CHumanTownHall();
+    CTownHall *HumanTH = new CTownHall(HumanTownHall);
     EXPECT_EQ(HumanTH->getHealth(), 10000);
 }
 

@@ -7,10 +7,11 @@
 
 #include "CBuilding.h"
 #include "CWarrior.h"
-
+#include "CFactoryBuilding.h"
 class CTownHall : public CBuilding {
 public:
     CTownHall() = default;
+    CTownHall(BuildingID _buildingID);
     ~CTownHall() = default;
 
     CWarrior* createPeasant();
