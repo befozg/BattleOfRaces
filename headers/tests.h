@@ -9,8 +9,8 @@
 #include "CHumanTownHall.h"
 
 TEST(CHumanTownHall__Test, create__Test) {
-    CHumanTownHall *HumanTH = new CHumanTownHall(CPoint(0, 0));
-    EXPECT_EQ(HumanTH->getHealth(), 300);
+    CHumanTownHall *HumanTH = new CHumanTownHall();
+    EXPECT_EQ(HumanTH->getHealth(), 10000);
 }
 
 #endif //BATTLEOFRACES_TESTS_H
