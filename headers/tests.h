@@ -13,4 +13,9 @@ TEST(CHumanTownHall__Test, create__Test) {
     EXPECT_EQ(HumanTH->getHealth(), 10000);
 }
 
+TEST(CBarack__Test, create__Test) {
+    // method is empty
+    EXPECT_EQ(1, 1);
+}
+
 #endif //BATTLEOFRACES_TESTS_H
