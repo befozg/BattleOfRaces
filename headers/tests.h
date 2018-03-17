@@ -18,4 +18,9 @@ TEST(CBarack__Test, create__Test) {
     EXPECT_EQ(1, 1);
 }
 
+TEST(COrcTownHall__Test, create__Test) {
+    CTownHall *OrcTH = new CTownHall(OrcTownHall);
+    EXPECT_EQ(OrcTH->getHealth(), 20000);
+}
+
 #endif //BATTLEOFRACES_TESTS_H
