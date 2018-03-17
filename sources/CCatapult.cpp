@@ -10,6 +10,7 @@ const int CatapultSpeed = 2;
 const int CatapultAttackDistance = 2;
 const int CatapultHealth = 300;
 const int CatapultPower = 150;
+const int CatapultAttackRadius = 3;
 
 CCatapult::CCatapult(WarriorID _warriorID) {
     switch (_warriorID) {
@@ -19,6 +20,7 @@ CCatapult::CCatapult(WarriorID _warriorID) {
             Speed = CatapultSpeed;
             Level = StartLevel;
             AttackDistance = CatapultAttackDistance;
+            AttackRadius = CatapultAttackRadius;
             break;
         }
 
@@ -28,6 +30,7 @@ CCatapult::CCatapult(WarriorID _warriorID) {
             Speed = CatapultSpeed;
             Level = StartLevel;
             AttackDistance = CatapultAttackDistance;
+            AttackRadius = CatapultAttackRadius;
             break;
         }
 
@@ -37,6 +40,7 @@ CCatapult::CCatapult(WarriorID _warriorID) {
             Speed = CatapultSpeed;
             Level = StartLevel;
             AttackDistance = CatapultAttackDistance;
+            AttackRadius = CatapultAttackRadius;
             break;
         }
     }

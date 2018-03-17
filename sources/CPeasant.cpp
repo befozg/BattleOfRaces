@@ -51,3 +51,7 @@ void CPeasant::harvestMine() {
     // за один ход добавляем одно "золото" в переменную Gold
 
 }
+
+void CPeasant::build() {
+    // ...
+}
