@@ -7,7 +7,7 @@ CTowerOfWizard* CFactoryTowerOfWizard::create(BuildingID _buildingID) {
     switch (_buildingID) {
 
 case BuildingID::HumanTowerOfWizard: {
-    CTowerOfWizard *HumanTowerOfWizard = new CTowerOfWizard;
+    CTowerOfWizard *HumanTowerOfWizard = new CTowerOfWizard(_buildingID);
     /*       HumanTowerOfWizard->setLevel(StartLevel);
            HumanTowerOfWizard->setHealth(TowerOfWizardHealth + (HumanTowerOfWizard->getLevel() - 1) * TowerOfWizardLevelHealthK);
            HumanTowerOfWizard->setPower(TowerOfWizardPower);
@@ -17,7 +17,7 @@ case BuildingID::HumanTowerOfWizard: {
 }
 
 case BuildingID::OrcTowerOfWizard: {
-    CTowerOfWizard *OrcTowerOfWizard = new CTowerOfWizard;
+    CTowerOfWizard *OrcTowerOfWizard = new CTowerOfWizard(_buildingID);
     /*       OrcTowerOfWizard->setLevel(StartLevel);
            OrcTowerOfWizard->setHealth(TowerOfWizardHealth + (OrcTowerOfWizard->getLevel() - 1) * TowerOfWizardLevelHealthK);
            OrcTowerOfWizard->setPower(TowerOfWizardPower);
@@ -27,7 +27,7 @@ case BuildingID::OrcTowerOfWizard: {
 }
 
 case BuildingID::ElfTowerOfWizard: {
-    CTowerOfWizard *ElfTowerOfWizard = new CTowerOfWizard;
+    CTowerOfWizard *ElfTowerOfWizard = new CTowerOfWizard(_buildingID);
     /*        ElfTowerOfWizard->setLevel(StartLevel);
             ElfTowerOfWizard->setHealth(TowerOfWizardHealth + (ElfTowerOfWizard->getLevel() - 1) * TowerOfWizardLevelHealthK);
             ElfTowerOfWizard->setPower(TowerOfWizardPower);

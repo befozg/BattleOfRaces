@@ -5,27 +5,31 @@
 #include "CCannonTower.h"
 
 
+const int CannonLevel = 1;
+const int CannonHealth = 1500;
+const int CannonAttackDistance = 10;
+const int CannonPower = 100;
 CCanonTower::CCanonTower(BuildingID _buildingID)  {
     switch (_buildingID) {
         case HumanCannonTower: {
-            Health = 3000;
-            Power = 0;
-            Level = 1;
-            AttackDistance = 0;
+            Health = CannonHealth;
+            Power = CannonPower;
+            Level = CannonLevel;
+            AttackDistance = CannonAttackDistance;
             break;
         }
         case OrcCannonTower: {
-            Health = 3000;
-            Power = 0;
-            Level = 1;
-            AttackDistance = 0;
+            Health = CannonHealth;
+            Power = CannonPower;
+            Level = CannonLevel;
+            AttackDistance = CannonAttackDistance;
             break;
         }
         case ElfCannonTower: {
-            Health = 2500;
-            Power = 0;
-            Level = 1;
-            AttackDistance = 0;
+            Health = CannonHealth;
+            Power = CannonPower;
+            Level = CannonLevel;
+            AttackDistance = CannonAttackDistance;
             break;
         }
     }

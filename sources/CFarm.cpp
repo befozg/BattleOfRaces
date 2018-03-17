@@ -4,27 +4,34 @@
 
 #include "CFarm.h"
 
+const int FarmLevel = 1;
+const int FarmHealth = 800;
+const int FarmAttackDistance = 0;
+const int FarmPower = 0;
+
+
+
 CFarm::CFarm(BuildingID _buildingID) {
     switch (_buildingID) {
         case HumanFarm: {
-            Health = 1000;
-            Power = 0;
-            Level = 1;
-            AttackDistance = 0;
+            Health = FarmHealth;
+            Power = FarmPower;
+            Level = FarmLevel;
+            AttackDistance = FarmAttackDistance;
             break;
         }
         case OrcFarm: {
-            Health = 1000;
-            Power = 0;
-            Level = 1;
-            AttackDistance = 0;
+            Health = FarmHealth;
+            Power = FarmPower;
+            Level = FarmLevel;
+            AttackDistance = FarmAttackDistance;
             break;
         }
         case ElfFarm: {
-            Health = 1200;
-            Power = 0;
-            Level = 1;
-            AttackDistance = 0;
+            Health = FarmHealth;
+            Power = FarmPower;
+            Level = FarmLevel;
+            AttackDistance = FarmAttackDistance;
             break;
         }
     }

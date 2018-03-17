@@ -2,29 +2,33 @@
 // Created by karen on 10.03.18.
 //
 #include "CTownHall.h"
-#include "CFactoryTownHall.h"
+
+const int TownHalLevel = 1;
+const int TownHallHealth = 5000;
+const int TownAttackDistance = 0;
+const int TownHallPower = 0;
 
 CTownHall::CTownHall(BuildingID _buildingID)  {
     switch (_buildingID) {
         case HumanTownHall: {
-            Health = 10000;
-            Power = 0;
-            Level = 1;
-            AttackDistance = 0;
+            Health = TownHallHealth;
+            Power = TownHallPower;
+            Level = TownHalLevel;
+            AttackDistance = TownAttackDistance;
             break;
         }
         case OrcTownHall: {
-            Health = 10000;
-            Power = 0;
-            Level = 1;
-            AttackDistance = 0;
+            Health = TownHallHealth;
+            Power = TownHallPower;
+            Level = TownHalLevel;
+            AttackDistance = TownAttackDistance;
             break;
         }
         case ElfTownHall: {
-            Health = 10000;
-            Power = 0;
-            Level = 1;
-            AttackDistance = 0;
+            Health = TownHallHealth;
+            Power = TownHallPower;
+            Level = TownHalLevel;
+            AttackDistance = TownAttackDistance;
             break;
         }
     }

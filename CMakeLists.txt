@@ -17,10 +17,10 @@ add_executable(BattleOfRaces main.cpp sources/CBuilding.cpp headers/CBuilding.h 
         sources/CInfant.cpp headers/CInfant.h headers/CHorseman.h headers/CFactoryWarrior.h
         headers/CArcher.h sources/CArcher.cpp sources/CHorseman.cpp headers/CWizzard.h
         sources/CWizzard.cpp headers/CCatapult.h sources/CCatapult.cpp headers/CFactoryBuilding.h
-        sources/CFactoryBuilding.cpp headers/CFactoryTownHall.h headers/CFactoryFarm.h headers/CFactoryBarack.h
+        headers/CFactoryTownHall.h headers/CFactoryFarm.h headers/CFactoryBarack.h
         headers/CArcher.h sources/CArcher.cpp sources/CHorseman.cpp headers/CWizzard.h
         sources/CWizzard.cpp headers/CCatapult.h sources/CCatapult.cpp headers/CFactoryBuilding.h
-        sources/CFactoryBuilding.cpp headers/tests.h headers/CFactoryPeasant.h headers/CFactoryInfant.h
+        headers/tests.h headers/CFactoryPeasant.h headers/CFactoryInfant.h
         headers/CFactoryArcher.h headers/CFactoryWizzard.h headers/CFactoryHorseman.h headers/CFactoryCatapult.h
         sources/CFactoryPeasant.cpp sources/CFactoryWizzard.cpp sources/CFactoryInfant.cpp sources/CFactoryArcher.cpp
         sources/CFactoryHorseman.cpp sources/CFactoryCatapult.cpp sources/CFactoryTownHall.cpp sources/CFactoryFarm.cpp

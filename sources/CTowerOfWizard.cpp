@@ -5,27 +5,33 @@
 #include "CTowerOfWizard.h"
 
 
+
+const int TowerOfWizardLevel= 1;
+const int TowerOfWizardHealth = 1500;
+const int TowerOfWizardAttackDistance = 10;
+const int TowerOfWizardPower = 100;
+
 CTowerOfWizard::CTowerOfWizard(BuildingID _buildingID) {
     switch (_buildingID) {
         case HumanTowerOfWizard: {
-            Health = 2000;
-            Power = 0;
-            Level = 1;
-            AttackDistance = 0;
+            Health = TowerOfWizardHealth;
+            Power = TowerOfWizardPower;
+            Level = TowerOfWizardLevel;
+            AttackDistance = TowerOfWizardAttackDistance;
             break;
         }
         case OrcTowerOfWizard: {
-            Health = 3000;
-            Power = 0;
-            Level = 1;
-            AttackDistance = 0;
+            Health = TowerOfWizardHealth;
+            Power = TowerOfWizardPower;
+            Level = TowerOfWizardLevel;
+            AttackDistance = TowerOfWizardAttackDistance;
             break;
         }
         case ElfTowerOfWizard: {
-            Health = 2500;
-            Power = 0;
-            Level = 1;
-            AttackDistance = 0;
+            Health = TowerOfWizardHealth;
+            Power = TowerOfWizardPower;
+            Level = TowerOfWizardLevel;
+            AttackDistance = TowerOfWizardAttackDistance;
             break;
         }
     }

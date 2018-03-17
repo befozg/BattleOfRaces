@@ -4,27 +4,33 @@
 
 #include "CBarack.h"
 
+
+const int BarackLevel = 1;
+const int BarackHealth = 2000;
+const int BarackAttackDistance = 0;
+const int BarackPower = 0;
+
 CBarack::CBarack(BuildingID _buildingID)  {
     switch (_buildingID) {
         case HumanBarack: {
-            Health = 2000;
-            Power = 0;
-            Level = 1;
-            AttackDistance = 0;
+            Health = BarackHealth;
+            Power = BarackPower;
+            Level = BarackLevel;
+            AttackDistance = BarackAttackDistance;
             break;
         }
         case OrcBarack: {
-            Health = 3000;
-            Power = 0;
-            Level = 1;
-            AttackDistance = 0;
+            Health = BarackHealth;
+            Power = BarackPower;
+            Level = BarackLevel;
+            AttackDistance = BarackAttackDistance;
             break;
         }
         case ElfBarack: {
-            Health = 2500;
-            Power = 0;
-            Level = 1;
-            AttackDistance = 0;
+            Health = BarackHealth;
+            Power = BarackPower;
+            Level = BarackLevel;
+            AttackDistance = BarackAttackDistance;
             break;
         }
     }
