@@ -9,7 +9,7 @@
 #include "CBuilding.h"
 
 enum BuildingID {
-    HumanTownHall,
+    HumanTownHall = 0,
     HumanFarm,
     HumanBarack,
     HumanTowerOfWizard,

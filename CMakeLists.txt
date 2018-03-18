@@ -27,6 +27,6 @@ add_executable(BattleOfRaces main.cpp sources/CBuilding.cpp headers/CBuilding.h 
         sources/CFactoryPeasant.cpp sources/CFactoryWizzard.cpp sources/CFactoryInfant.cpp sources/CFactoryArcher.cpp
         sources/CFactoryHorseman.cpp sources/CFactoryCatapult.cpp sources/CFactoryTownHall.cpp sources/CFactoryFarm.cpp
         sources/CFactoryTowerOfWizard.cpp sources/CFactoryBarack.cpp sources/CFactoryCannonTower.cpp headers/CFactoryCannon.h
-        headers/CFactoryTowerOfWizard.h)
+        headers/CFactoryTowerOfWizard.h )
 
 target_link_libraries(BattleOfRaces gtest gtest_main)

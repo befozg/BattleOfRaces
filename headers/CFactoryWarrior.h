@@ -8,7 +8,7 @@
 #include "CWarrior.h"
 
 enum WarriorID {
-    HumanPeasant,
+    HumanPeasant = 0,
     HumanInfant,
     HumanHorseman,
     HumanArcher,

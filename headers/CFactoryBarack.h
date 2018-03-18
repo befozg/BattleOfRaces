@@ -11,6 +11,7 @@
 class CFactoryBarack : public CFactoryBuilding {
 public:
     CFactoryBarack() = default;
+//    ~CFactoryBarack() = default;
     ~CFactoryBarack() = default;
 
     static CBarack* create(BuildingID _buildingID);

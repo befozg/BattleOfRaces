@@ -10,7 +10,7 @@
 class CWarrior : public IUnit {
 public:
     CWarrior() = default;
-    ~CWarrior() = default;
+    ~CWarrior() {};
 
     void move(const CPoint _coordinates);
     virtual void attack(const CPoint _coordinates);

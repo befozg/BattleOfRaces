@@ -12,7 +12,7 @@ class CPeasant : public CWarrior {
 public:
     CPeasant() = default;
     CPeasant(WarriorID _warriorID);
-    ~CPeasant() = default;
+    ~CPeasant() {};
 
     void harvestWood();
     void harvestMine();

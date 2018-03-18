@@ -39,6 +39,10 @@ TEST(CFactoryBarack_Test, create__Test) {
 
     CBarack *ElfB = CFactoryBarack::create(ElfBarack);
     EXPECT_EQ(ElfB->getHealth(), 2000);
+
+    delete ElfB;
+    delete HumanB;
+    delete OrcB;
 }
 
 TEST(CFactoryTownHall__Test, create__Test) {
@@ -50,6 +54,10 @@ TEST(CFactoryTownHall__Test, create__Test) {
 
     CTownHall *ElfTH = CFactoryTownHall::create(ElfTownHall);
     EXPECT_EQ(ElfTH->getHealth(), 5000);
+    delete ElfTH;
+    delete HumanTH;
+    delete OrcTH;
+
 }
 
 TEST(CFactoryFarm_Test, create__Test) {
@@ -61,6 +69,11 @@ TEST(CFactoryFarm_Test, create__Test) {
 
     CFarm *ElfF = CFactoryFarm::create(ElfFarm);
     EXPECT_EQ(ElfF->getHealth(), 800);
+
+    delete ElfF;
+    delete HumanF;
+    delete OrcF;
+
 }
 
 
@@ -76,6 +89,11 @@ TEST(CFactoryCannon_Test, create__Test) {
     CCanonTower *ElfC = CFactoryCannon::create(ElfCannonTower);
     EXPECT_EQ(ElfC->getHealth(), 1500);
     EXPECT_EQ(ElfC->getAttackDistance(), 10);
+
+    delete ElfC;
+    delete HumanC;
+    delete OrcC;
+
 }
 
 TEST(CFactoryToW_Test, create__Test) {
@@ -90,6 +108,11 @@ TEST(CFactoryToW_Test, create__Test) {
     CTowerOfWizard *ElfTW = CFactoryTowerOfWizard::create(ElfTowerOfWizard);
     EXPECT_EQ(ElfTW->getHealth(), 1500);
     EXPECT_EQ(ElfTW->getAttackDistance(), 10);
+
+    delete ElfTW;
+    delete HumanTW;
+    delete OrcTW;
+
 }
 
 TEST(CFactoryArcher__Test, create__Test) {
@@ -104,6 +127,11 @@ TEST(CFactoryArcher__Test, create__Test) {
     CArcher *Archer3 = CFactoryArcher::create(ElfArcher);
     EXPECT_EQ(Archer3->getHealth(), 100);
     EXPECT_EQ(Archer3->getPower(), 30);
+
+    delete Archer1;
+    delete Archer2;
+    delete Archer3;
+
 }
 
 TEST(CFactoryInfant__Test, create__Test) {
@@ -118,6 +146,11 @@ TEST(CFactoryInfant__Test, create__Test) {
     CInfant *Infant3 = CFactoryInfant::create(ElfInfant);
     EXPECT_EQ(Infant3->getHealth(), 200);
     EXPECT_EQ(Infant3->getPower(), 50);
+
+    delete Infant1;
+    delete Infant2;
+    delete Infant3;
+
 }
 
 TEST(CFactoryHorseman__Test, create__Test) {
@@ -132,6 +165,10 @@ TEST(CFactoryHorseman__Test, create__Test) {
     CHorseman *Horseman3 = CFactoryHorseman::create(ElfHorseman);
     EXPECT_EQ(Horseman3->getHealth(), 150);
     EXPECT_EQ(Horseman3->getPower(), 40);
+
+    delete Horseman1;
+    delete Horseman2;
+    delete Horseman3;
 }
 
 TEST(CFactoryPeasant__Test, create__Test) {
@@ -146,6 +183,10 @@ TEST(CFactoryPeasant__Test, create__Test) {
     CPeasant *Peasant3 = CFactoryPeasant::create(ElfPeasant);
     EXPECT_EQ(Peasant3->getHealth(), 100);
     EXPECT_EQ(Peasant3->getPower(), 10);
+
+    delete Peasant1;
+    delete Peasant2;
+    delete Peasant3;
 }
 
 TEST(CFactoryWizzard__Test, create__Test) {
@@ -160,6 +201,10 @@ TEST(CFactoryWizzard__Test, create__Test) {
     CWizzard *Wizzard3 = CFactoryWizzard::create(ElfWizzard);
     EXPECT_EQ(Wizzard3->getHealth(), 100);
     EXPECT_EQ(Wizzard3->getPower(), 10);
+
+    delete Wizzard1;
+    delete Wizzard2;
+    delete Wizzard3;
 }
 
 TEST(CFactoryCatapult__Test, create__Test) {
@@ -174,42 +219,59 @@ TEST(CFactoryCatapult__Test, create__Test) {
     CCatapult *Catapult3 = CFactoryCatapult::create(ElfCatapult);
     EXPECT_EQ(Catapult3->getHealth(), 300);
     EXPECT_EQ(Catapult3->getPower(), 150);
+
+
+    delete Catapult1;
+    delete Catapult2;
+    delete Catapult3;
 }
 
 TEST(CPeasant__Test, harvestWood__Test) {
     CPeasant *Peasant = CFactoryPeasant::create(HumanPeasant);
     Peasant->harvestWood();
     EXPECT_EQ(1, 1); // заготовка на будущее
+
+    delete Peasant;
 }
 
 TEST(CPeasant__Test, harvestMine__Test) {
     CPeasant *Peasant = CFactoryPeasant::create(HumanPeasant);
     Peasant->harvestMine();
     EXPECT_EQ(1, 1); // заготовка на будущее
+
+    delete Peasant;
 }
 
 TEST(CPeasant__Test, build__Test) {
     CPeasant *Peasant = CFactoryPeasant::create(HumanPeasant);
     Peasant->build();
     EXPECT_EQ(1, 1); // заготовка на будущее
+
+    delete Peasant;
 }
 
 TEST(CWarrior__Test, move__Test) {
     CWarrior *Warrior = CFactoryInfant::create(HumanInfant);
     Warrior->move(CPoint(0, 0));
     EXPECT_EQ(1, 1); // заготовка на будущее
+
+    delete Warrior;
 }
 
 TEST(CWarrior__Test, attack__Test) {
     CWarrior *Warrior = CFactoryInfant::create(HumanInfant);
     Warrior->attack(CPoint(0, 0));
     EXPECT_EQ(1, 1); // заготовка на будущее
+    delete Warrior;
+
 }
 
 TEST(CWizzard__Test, heal__Test) {
     CWizzard *Wizzard = CFactoryWizzard::create(HumanWizzard);
     Wizzard->heal(CPoint(0, 0));
     EXPECT_EQ(1, 1); // заготовка на будущее
+
+    delete Wizzard;
 }
 
 #endif //BATTLEOFRACES_TESTS_H
