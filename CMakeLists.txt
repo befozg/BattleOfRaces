@@ -7,7 +7,7 @@ set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_FLAGS -pthread)
 
 if (WITH_TEST)
-    enable_testing()
+    add_definitions(-DWITH_TEST)
 endif()
 
 find_package(GTest REQUIRED)
