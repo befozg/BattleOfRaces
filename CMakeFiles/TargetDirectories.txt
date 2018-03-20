@@ -1,0 +1,4 @@
+/home/dmitry/CLionProjects/BattleOfRaces/CMakeFiles/edit_cache.dir
+/home/dmitry/CLionProjects/BattleOfRaces/CMakeFiles/rebuild_cache.dir
+/home/dmitry/CLionProjects/BattleOfRaces/CMakeFiles/test.dir
+/home/dmitry/CLionProjects/BattleOfRaces/CMakeFiles/BattleOfRaces.dir
