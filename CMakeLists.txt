@@ -1,11 +1,7 @@
 cmake_minimum_required(VERSION 3.0)
 project(BattleOfRaces)
-set(CMAKE_CXX_STANDARD 11)
 
-#set(CMAKE_CXX_FLAGS_DEBUG "-Wall")
-#set(CMAKE_CXX_FLAGS_RELEASE "-O3")
-#set(CMAKE_CXX_FLAGS -pthread)
-
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -Wall")
 if(DEBUG)
     set(CMAKE_BUILD_TYPE Debug)
 endif()
@@ -18,8 +14,8 @@ add_subdirectory(lib/googletest-master)
 include_directories(lib/googletest-master/googletest/include)
 include_directories(lib/googletest-master/googlemock/include)
 
-#find_package(GTest REQUIRED)
-#include_directories(${gtest_SOURCE_DIR}/include)
+find_package(GTest REQUIRED)
+include_directories(${gtest_SOURCE_DIR}/include)
 
 include_directories(headers sources)
 
