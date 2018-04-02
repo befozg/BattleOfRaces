@@ -227,7 +227,7 @@ TEST(CFactoryCatapult__Test, create__Test) {
     delete Catapult3;
 }
 
-TEST(CPeasant__Test, harvestWood__Test) {
+TEST(DISABLED_CPeasant__Test, harvestWood__Test) {
     CPeasant *Peasant = CFactoryPeasant::create(HumanPeasant);
     Peasant->harvestWood();
     EXPECT_EQ(1, 1); // заготовка на будущее
@@ -235,7 +235,7 @@ TEST(CPeasant__Test, harvestWood__Test) {
     delete Peasant;
 }
 
-TEST(CPeasant__Test, harvestMine__Test) {
+TEST(DISABLED_CPeasant__Test, harvestMine__Test) {
     CPeasant *Peasant = CFactoryPeasant::create(HumanPeasant);
     Peasant->harvestMine();
     EXPECT_EQ(1, 1); // заготовка на будущее
@@ -243,7 +243,7 @@ TEST(CPeasant__Test, harvestMine__Test) {
     delete Peasant;
 }
 
-TEST(CPeasant__Test, build__Test) {
+TEST(DISABLED_CPeasant__Test, build__Test) {
     CPeasant *Peasant = CFactoryPeasant::create(HumanPeasant);
     Peasant->build();
     EXPECT_EQ(1, 1); // заготовка на будущее
@@ -251,7 +251,7 @@ TEST(CPeasant__Test, build__Test) {
     delete Peasant;
 }
 
-TEST(CWarrior__Test, move__Test) {
+TEST(DISABLED_CWarrior__Test, move__Test) {
     CWarrior *Warrior = CFactoryInfant::create(HumanInfant);
     Warrior->move(CPoint(0, 0));
     EXPECT_EQ(1, 1); // заготовка на будущее
@@ -259,7 +259,7 @@ TEST(CWarrior__Test, move__Test) {
     delete Warrior;
 }
 
-TEST(CWarrior__Test, attack__Test) {
+TEST(DISABLED_CWarrior__Test, attack__Test) {
     CWarrior *Warrior = CFactoryInfant::create(HumanInfant);
     Warrior->attack(CPoint(0, 0));
     EXPECT_EQ(1, 1); // заготовка на будущее
@@ -267,7 +267,7 @@ TEST(CWarrior__Test, attack__Test) {
 
 }
 
-TEST(CWizzard__Test, heal__Test) {
+TEST(DISABLED_CWizzard__Test, heal__Test) {
     CWizzard *Wizzard = CFactoryWizzard::create(HumanWizzard);
     Wizzard->heal(CPoint(0, 0));
     EXPECT_EQ(1, 1); // заготовка на будущее
