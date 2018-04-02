@@ -9,7 +9,8 @@ const int FarmHealth = 800;
 const int FarmAttackDistance = 0;
 const int FarmPower = 0;
 
-
+// Пока ещё не придумали константы для каждой рассы, но они очевидно будут разные в силу разносторонности игры. Поэтому
+// пока поставили всем объектам одно и то же значение
 
 CFarm::CFarm(BuildingID _buildingID) {
     switch (_buildingID) {

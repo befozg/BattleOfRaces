@@ -9,7 +9,7 @@ void CWarrior::move(const CPoint _coordinates) {
 
 }
 
-void CWarrior::attack(const CPoint _coordinates) {
+void CWarrior::attack(const CPoint &_coordinates) {
     // если враг есть в зоне поражения, то производим атаку: за один ход у врага убирается кол-во
     // HP равное значению Power
 

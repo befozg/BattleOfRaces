@@ -12,7 +12,7 @@ public:
     CBuilding() = default;
     virtual ~CBuilding() {};
 
-    virtual void attack(const CPoint _coordinates) ;
+    virtual void attack(const CPoint &_coordinates) ;
 
 protected:
     int Size;

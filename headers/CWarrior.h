@@ -13,7 +13,7 @@ public:
     ~CWarrior() {};
 
     void move(const CPoint _coordinates);
-    virtual void attack(const CPoint _coordinates);
+    virtual void attack(const CPoint &_coordinates);
 
     int getSpeed();
     void setSpeed(int _speed);

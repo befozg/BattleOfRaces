@@ -10,6 +10,9 @@ const int BarackHealth = 2000;
 const int BarackAttackDistance = 0;
 const int BarackPower = 0;
 
+// Пока ещё не придумали константы для каждой рассы, но они очевидно будут разные в силу разносторонности игры. Поэтому
+// пока поставили всем объектам одно и то же значение
+
 CBarack::CBarack(BuildingID _buildingID)  {
     switch (_buildingID) {
         case HumanBarack: {

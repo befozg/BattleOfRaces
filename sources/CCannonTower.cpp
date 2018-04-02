@@ -9,6 +9,10 @@ const int CannonLevel = 1;
 const int CannonHealth = 1500;
 const int CannonAttackDistance = 10;
 const int CannonPower = 100;
+
+// Пока ещё не придумали константы для каждой рассы, но они очевидно будут разные в силу разносторонности игры. Поэтому
+// пока поставили всем объектам одно и то же значение
+
 CCanonTower::CCanonTower(BuildingID _buildingID)  {
     switch (_buildingID) {
         case HumanCannonTower: {

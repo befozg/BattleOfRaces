@@ -12,6 +12,9 @@ const int CatapultHealth = 300;
 const int CatapultPower = 150;
 const int CatapultAttackRadius = 3;
 
+// Пока ещё не придумали константы для каждой рассы, но они очевидно будут разные в силу разносторонности игры. Поэтому
+// пока поставили всем объектам одно и то же значение
+
 CCatapult::CCatapult(WarriorID _warriorID) {
     switch (_warriorID) {
         case HumanCatapult: {
