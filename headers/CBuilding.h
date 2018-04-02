@@ -5,9 +5,9 @@
 #ifndef BATTLEOFRACES_IBUILDING_H
 #define BATTLEOFRACES_IBUILDING_H
 
-#include "IUnit.h"
+#include "CUnit.h"
 
-class CBuilding : public IUnit {
+class CBuilding : public CUnit {
 public:
     CBuilding() = default;
     virtual ~CBuilding() {};

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\dimap\CLionProjects\BattleOfRaces\CMakeFiles\4dc170b5ed639a60a8fc965e0e33fadf\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{CE9F2936-1AD3-326E-9ED5-B8FD6569E26A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -15,10 +15,10 @@ public:
     int Y;
 };
 
-class IUnit {
+class CUnit {
 public:
-    IUnit() = default;
-    virtual ~IUnit() = default;
+    CUnit() = default;
+    virtual ~CUnit() = default;
 
     virtual void attack(const CPoint _coordinates) = 0;
 

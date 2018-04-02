@@ -30,6 +30,7 @@
 #include "CCannonTower.h"
 #include "CFactoryTownHall.h"
 
+
 TEST(CFactoryBarack_Test, create__Test) {
     CBarack *HumanB = CFactoryBarack::create(HumanBarack);
     EXPECT_EQ(HumanB->getHealth(), 2000);

@@ -5,9 +5,9 @@
 #ifndef BATTLEOFRACES_IWARRIOR_H
 #define BATTLEOFRACES_IWARRIOR_H
 
-#include "IUnit.h"
+#include "CUnit.h"
 
-class CWarrior : public IUnit {
+class CWarrior : public CUnit {
 public:
     CWarrior() = default;
     ~CWarrior() {};
