@@ -19,6 +19,7 @@ CArcher::CArcher(WarriorID _warriorID) {
             Speed = ArcherSpeed;
             Level = StartLevel;
             AttackDistance = ArcherAttackDistance;
+            race = "Human";
             break;
         }
 
@@ -28,6 +29,7 @@ CArcher::CArcher(WarriorID _warriorID) {
             Speed = ArcherSpeed;
             Level = StartLevel;
             AttackDistance = ArcherAttackDistance;
+            race = "Orc";
             break;
         }
 
@@ -37,6 +39,7 @@ CArcher::CArcher(WarriorID _warriorID) {
             Speed = ArcherSpeed;
             Level = StartLevel;
             AttackDistance = ArcherAttackDistance;
+            race = "Elf";
             break;
         }
     }

@@ -26,6 +26,7 @@ CInfant::CInfant(WarriorID _warriorID) {
             Speed = InfantSpeed;
             Level = StartLevel;
             AttackDistance = InfantAttackDistance;
+            race = "Human";
             break;
         }
 
@@ -35,6 +36,7 @@ CInfant::CInfant(WarriorID _warriorID) {
             Speed = InfantSpeed;
             Level = StartLevel;
             AttackDistance = InfantAttackDistance;
+            race = "Orc";
             break;
         }
 
@@ -44,6 +46,7 @@ CInfant::CInfant(WarriorID _warriorID) {
             Speed = InfantSpeed;
             Level = StartLevel;
             AttackDistance = InfantAttackDistance;
+            race = "Elf";
             break;
         }
     }

@@ -14,14 +14,14 @@ add_subdirectory(lib/googletest-master)
 include_directories(lib/googletest-master/googletest/include)
 include_directories(lib/googletest-master/googlemock/include)
 
-find_package(GTest REQUIRED)
-include_directories(${gtest_SOURCE_DIR}/include)
+#find_package(GTest REQUIRED)
+#include_directories(${gtest_SOURCE_DIR}/include)
 
 include_directories(headers sources)
 
 file(GLOB SRC_FILES sources/*.cpp)
 file(GLOB HDR_FILES headers/*.h)
 
-add_executable(BattleOfRaces main.cpp ${SRC_FILES} ${HDR_FILES})
+add_executable(BattleOfRaces main.cpp ${SRC_FILES} ${HDR_FILES} headers/CArmy.h headers/IComponent.h)
 
 target_link_libraries(BattleOfRaces gtest gtest_main)

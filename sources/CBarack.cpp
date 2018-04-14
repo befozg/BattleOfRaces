@@ -20,6 +20,7 @@ CBarack::CBarack(BuildingID _buildingID)  {
             Power = BarackPower;
             Level = BarackLevel;
             AttackDistance = BarackAttackDistance;
+            race = "Human";
             break;
         }
         case OrcBarack: {
@@ -27,6 +28,7 @@ CBarack::CBarack(BuildingID _buildingID)  {
             Power = BarackPower;
             Level = BarackLevel;
             AttackDistance = BarackAttackDistance;
+            race = "Orc";
             break;
         }
         case ElfBarack: {
@@ -34,6 +36,7 @@ CBarack::CBarack(BuildingID _buildingID)  {
             Power = BarackPower;
             Level = BarackLevel;
             AttackDistance = BarackAttackDistance;
+            race = "Elf";
             break;
         }
     }

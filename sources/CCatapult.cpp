@@ -24,6 +24,7 @@ CCatapult::CCatapult(WarriorID _warriorID) {
             Level = StartLevel;
             AttackDistance = CatapultAttackDistance;
             AttackRadius = CatapultAttackRadius;
+            race = "Human";
             break;
         }
 
@@ -34,6 +35,7 @@ CCatapult::CCatapult(WarriorID _warriorID) {
             Level = StartLevel;
             AttackDistance = CatapultAttackDistance;
             AttackRadius = CatapultAttackRadius;
+            race = "Orc";
             break;
         }
 
@@ -44,6 +46,7 @@ CCatapult::CCatapult(WarriorID _warriorID) {
             Level = StartLevel;
             AttackDistance = CatapultAttackDistance;
             AttackRadius = CatapultAttackRadius;
+            race = "Elf";
             break;
         }
     }

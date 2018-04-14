@@ -15,6 +15,7 @@ CTownHall::CTownHall(BuildingID _buildingID)  {
             Power = TownHallPower;
             Level = TownHalLevel;
             AttackDistance = TownAttackDistance;
+            race = "Human";
             break;
         }
         case OrcTownHall: {
@@ -22,6 +23,7 @@ CTownHall::CTownHall(BuildingID _buildingID)  {
             Power = TownHallPower;
             Level = TownHalLevel;
             AttackDistance = TownAttackDistance;
+            race = "Orc";
             break;
         }
         case ElfTownHall: {
@@ -29,6 +31,7 @@ CTownHall::CTownHall(BuildingID _buildingID)  {
             Power = TownHallPower;
             Level = TownHalLevel;
             AttackDistance = TownAttackDistance;
+            race = "Elf";
             break;
         }
     }

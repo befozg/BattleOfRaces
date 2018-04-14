@@ -24,6 +24,10 @@ int CUnit::getLevel() const{
     return Level;
 }
 
+std::string CUnit::getRace() const {
+    return race;
+}
+
 void CUnit::setHealth(int _health) {
     Health = _health;
 }
@@ -38,4 +42,8 @@ void CUnit::setCoordinates(CPoint _coordinates) {
 }
 void CUnit::setLevel(int _level) {
     Level = _level;
+}
+
+void CUnit::setRace(std::string &_race) {
+    race = _race;
 }

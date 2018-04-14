@@ -19,6 +19,7 @@ CHorseman::CHorseman(WarriorID _warriorID) {
             Speed = HorsemanSpeed;
             Level = StartLevel;
             AttackDistance = HorsemanAttackDistance;
+            race = "Human";
             break;
         }
 
@@ -28,6 +29,7 @@ CHorseman::CHorseman(WarriorID _warriorID) {
             Speed = HorsemanSpeed;
             Level = StartLevel;
             AttackDistance = HorsemanAttackDistance;
+            race = "Orc";
             break;
         }
 
@@ -37,6 +39,7 @@ CHorseman::CHorseman(WarriorID _warriorID) {
             Speed = HorsemanSpeed;
             Level = StartLevel;
             AttackDistance = HorsemanAttackDistance;
+            race = "Elf";
             break;
         }
     }

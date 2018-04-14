@@ -19,6 +19,7 @@ CFarm::CFarm(BuildingID _buildingID) {
             Power = FarmPower;
             Level = FarmLevel;
             AttackDistance = FarmAttackDistance;
+            race = "Human";
             break;
         }
         case OrcFarm: {
@@ -26,6 +27,7 @@ CFarm::CFarm(BuildingID _buildingID) {
             Power = FarmPower;
             Level = FarmLevel;
             AttackDistance = FarmAttackDistance;
+            race = "Orc";
             break;
         }
         case ElfFarm: {
@@ -33,6 +35,7 @@ CFarm::CFarm(BuildingID _buildingID) {
             Power = FarmPower;
             Level = FarmLevel;
             AttackDistance = FarmAttackDistance;
+            race = "Elf";
             break;
         }
     }

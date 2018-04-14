@@ -24,6 +24,7 @@ CWizzard::CWizzard(WarriorID _warriorID) {
             Speed = WizzardSpeed;
             Level = StartLevel;
             AttackDistance = WizzardAttackDistance;
+            race = "Human";
             break;
         }
 
@@ -33,6 +34,7 @@ CWizzard::CWizzard(WarriorID _warriorID) {
             Speed = WizzardSpeed;
             Level = StartLevel;
             AttackDistance = WizzardAttackDistance;
+            race = "Orc";
             break;
         }
 
@@ -42,6 +44,7 @@ CWizzard::CWizzard(WarriorID _warriorID) {
             Speed = WizzardSpeed;
             Level = StartLevel;
             AttackDistance = WizzardAttackDistance;
+            race = "Elf";
             break;
         }
     }

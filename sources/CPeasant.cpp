@@ -19,6 +19,7 @@ CPeasant::CPeasant(WarriorID _warriorID) {
             Speed = PeasantSpeed;
             Level = StartLevel;
             AttackDistance = PeasantAttackDistance;
+            race = "Human";
             break;
         }
 
@@ -28,6 +29,7 @@ CPeasant::CPeasant(WarriorID _warriorID) {
             Speed = PeasantSpeed;
             Level = StartLevel;
             AttackDistance = PeasantAttackDistance;
+            race = "Orc";
             break;
         }
 
@@ -37,6 +39,7 @@ CPeasant::CPeasant(WarriorID _warriorID) {
             Speed = PeasantSpeed;
             Level = StartLevel;
             AttackDistance = PeasantAttackDistance;
+            race = "Elf";
             break;
         }
     }

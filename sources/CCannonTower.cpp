@@ -20,6 +20,7 @@ CCanonTower::CCanonTower(BuildingID _buildingID)  {
             Power = CannonPower;
             Level = CannonLevel;
             AttackDistance = CannonAttackDistance;
+            race = "Human";
             break;
         }
         case OrcCannonTower: {
@@ -27,6 +28,7 @@ CCanonTower::CCanonTower(BuildingID _buildingID)  {
             Power = CannonPower;
             Level = CannonLevel;
             AttackDistance = CannonAttackDistance;
+            race = "Orc";
             break;
         }
         case ElfCannonTower: {
@@ -34,6 +36,7 @@ CCanonTower::CCanonTower(BuildingID _buildingID)  {
             Power = CannonPower;
             Level = CannonLevel;
             AttackDistance = CannonAttackDistance;
+            race = "Elf";
             break;
         }
     }

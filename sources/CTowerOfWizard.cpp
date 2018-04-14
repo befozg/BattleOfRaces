@@ -18,6 +18,7 @@ CTowerOfWizard::CTowerOfWizard(BuildingID _buildingID) {
             Power = TowerOfWizardPower;
             Level = TowerOfWizardLevel;
             AttackDistance = TowerOfWizardAttackDistance;
+            race = "Human";
             break;
         }
         case OrcTowerOfWizard: {
@@ -25,6 +26,7 @@ CTowerOfWizard::CTowerOfWizard(BuildingID _buildingID) {
             Power = TowerOfWizardPower;
             Level = TowerOfWizardLevel;
             AttackDistance = TowerOfWizardAttackDistance;
+            race = "Orc";
             break;
         }
         case ElfTowerOfWizard: {
@@ -32,6 +34,7 @@ CTowerOfWizard::CTowerOfWizard(BuildingID _buildingID) {
             Power = TowerOfWizardPower;
             Level = TowerOfWizardLevel;
             AttackDistance = TowerOfWizardAttackDistance;
+            race = "Elf";
             break;
         }
     }

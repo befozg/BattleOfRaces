@@ -5,6 +5,8 @@
 #ifndef BATTLEOFRACES_IUNIT_H
 #define BATTLEOFRACES_IUNIT_H
 
+#include <string>
+
 class CPoint {
 public:
     CPoint();
@@ -27,12 +29,14 @@ public:
     int getAttackDistance() const;
     int getLevel() const;
     CPoint getCoordinates() const;
+    std::string getRace() const;
 
     virtual void setHealth(int _health);
     virtual void setPower(int _power);
     virtual void setAttackDistance(int _attackDistance);
     virtual void setLevel(int _level);
     virtual void setCoordinates(CPoint _coordinates);
+    virtual void setRace(std::string &_race);
 
 protected:
     int Health;
@@ -40,6 +44,7 @@ protected:
     int AttackDistance;
     CPoint Coordinates;
     int Level;
+    std::string race;
 };
 
 #endif //BATTLEOFRACES_IUNIT_H
