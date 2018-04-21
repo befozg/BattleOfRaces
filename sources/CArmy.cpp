@@ -3,7 +3,9 @@
 //
 
 #include "CArmy.h"
-
+CArmy::CArmy(std::string &_race) {
+        race = _race;
+}
 CWarrior* CArmy::getChild(int _number) {
     if (_number < warriors.size()) {
         return warriors[_number];

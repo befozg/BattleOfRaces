@@ -31,6 +31,7 @@
 #include "CFactoryTownHall.h"
 #include "CArmy.h"
 
+
 TEST(CFactoryBarack_Test, create__Test) {
     CBarack *HumanB = CFactoryBarack::create(HumanBarack);
     EXPECT_EQ(HumanB->getHealth(), 2000);
@@ -275,7 +276,14 @@ TEST(DISABLED_CWizzard__Test, heal__Test) {
 }
 
 TEST(CArmy__Test, attack__Test) {
-     CArmy* army = new CArmy;
-    EXPECT_EQ(1,1);
+    std::string race = "Human";
+    CArmy *Army = new CArmy(race);
+    CWarrior *inf = CFactoryInfant::create(HumanInfant);
+    CWarrior *arch = CFactoryArcher::create(HumanArcher);
+    CWarrior *mag = CFactoryWizzard::create(HumanWizzard);
+    Army->add(inf); Army->add(arch); Army->add(mag);
+    CBuilding *enemyTH = CFactoryTownHall::create(OrcTownHall);
+    Army->attack(enemyTH);
+    EXPECT_EQ(enemyTH->getHealth(), 4910);
 }
 #endif //BATTLEOFRACES_TESTS_H
