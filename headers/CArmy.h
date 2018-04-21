@@ -5,38 +5,19 @@
 #ifndef BATTLEOFRACES_CARMY_H
 #define BATTLEOFRACES_CARMY_H
 
-#include "IComponent.h"
+#include "IComponentTest.h"
 #include <vector>
 #include <string>
 #include <algorithm>
+#include "CWarrior.h"
 
-class CArmy : public IComponent {
+class CArmy : public IComponentTest {
 public:
-    virtual CWarrior* getChild(int _number) {
-        if (_number < warriors.size()) {
-            return warriors[_number];
-        }
-    }
-
-    virtual void move(CPoint _coordinates) {
-        for (int i = 0; i < warriors.size(); ++i){
-            warriors[i]->move(_coordinates);
-        }
-    }
-    virtual void add(CWarrior *_warrior) {
-        warriors.push_back(_warrior);
-    }
-
-    virtual void remove(CWarrior *_warrior) {
-        warriors.erase(std::remove(warriors.begin(), warriors.end(), _warrior), warriors.end());
-    }
-
-    virtual void attack(const CPoint _coordinates) {
-        for (int i = 0; i < warriors.size(); ++i){
-            warriors[i]->attack(_coordinates);
-        }
-    }
-
+    virtual CWarrior* getChild(int _number);
+    virtual void attack(const CUnit* _target) = 0;
+    virtual void move(CPoint& _coordinates) = 0;
+    virtual void add(CWarrior* _warrior);
+    virtual void remove(CWarrior* _warrior);
 private:
     std::vector<CWarrior*> warriors;
     std::string race;

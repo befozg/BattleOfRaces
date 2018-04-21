@@ -22,6 +22,6 @@ include_directories(headers sources)
 file(GLOB SRC_FILES sources/*.cpp)
 file(GLOB HDR_FILES headers/*.h)
 
-add_executable(BattleOfRaces main.cpp ${SRC_FILES} ${HDR_FILES} headers/CArmy.h headers/IComponent.h)
+add_executable(BattleOfRaces main.cpp ${SRC_FILES} ${HDR_FILES})
 
 target_link_libraries(BattleOfRaces gtest gtest_main)

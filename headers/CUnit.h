@@ -22,8 +22,6 @@ public:
     CUnit() = default;
     virtual ~CUnit() = default;
 
-    virtual void attack(const CPoint &_coordinates) = 0;
-
     int getHealth() const;
     int getPower() const;
     int getAttackDistance() const;

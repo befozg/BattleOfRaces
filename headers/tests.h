@@ -261,7 +261,7 @@ TEST(DISABLED_CWarrior__Test, move__Test) {
 
 TEST(DISABLED_CWarrior__Test, attack__Test) {
     CWarrior *Warrior = CFactoryInfant::create(HumanInfant);
-    Warrior->attack(CPoint(0, 0));
+    //Warrior->attack(CPoint(0, 0));
     EXPECT_EQ(1, 1); // заготовка на будущее
     delete Warrior;
 
