@@ -45,10 +45,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/karen/Документы/clion-2017.3.4/bin/cmake/bin/cmake
+CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
-RM = /home/karen/Документы/clion-2017.3.4/bin/cmake/bin/cmake -E remove -f
+RM = /usr/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -60,39 +60,40 @@ CMAKE_SOURCE_DIR = /home/karen/CLionProjects/BattleOfRaces
 CMAKE_BINARY_DIR = /home/karen/CLionProjects/BattleOfRaces
 
 #=============================================================================
-# Target rules for target CMakeFiles/main.cpp.dir
+# Target rules for target CMakeFiles/BattleOfRaces.dir
 
 # All Build rule for target.
-CMakeFiles/main.cpp.dir/all:
-	$(MAKE) -f CMakeFiles/main.cpp.dir/build.make CMakeFiles/main.cpp.dir/depend
-	$(MAKE) -f CMakeFiles/main.cpp.dir/build.make CMakeFiles/main.cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/karen/CLionProjects/BattleOfRaces/CMakeFiles --progress-num=9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35 "Built target main.cpp"
-.PHONY : CMakeFiles/main.cpp.dir/all
+CMakeFiles/BattleOfRaces.dir/all: lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/all
+CMakeFiles/BattleOfRaces.dir/all: lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/all
+	$(MAKE) -f CMakeFiles/BattleOfRaces.dir/build.make CMakeFiles/BattleOfRaces.dir/depend
+	$(MAKE) -f CMakeFiles/BattleOfRaces.dir/build.make CMakeFiles/BattleOfRaces.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/karen/CLionProjects/BattleOfRaces/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28 "Built target BattleOfRaces"
+.PHONY : CMakeFiles/BattleOfRaces.dir/all
 
 # Include target in all.
-all: CMakeFiles/main.cpp.dir/all
+all: CMakeFiles/BattleOfRaces.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/main.cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/karen/CLionProjects/BattleOfRaces/CMakeFiles 27
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/main.cpp.dir/all
+CMakeFiles/BattleOfRaces.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/karen/CLionProjects/BattleOfRaces/CMakeFiles 32
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/BattleOfRaces.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/karen/CLionProjects/BattleOfRaces/CMakeFiles 0
-.PHONY : CMakeFiles/main.cpp.dir/rule
+.PHONY : CMakeFiles/BattleOfRaces.dir/rule
 
 # Convenience name for target.
-main.cpp: CMakeFiles/main.cpp.dir/rule
+BattleOfRaces: CMakeFiles/BattleOfRaces.dir/rule
 
-.PHONY : main.cpp
-
-# clean rule for target.
-CMakeFiles/main.cpp.dir/clean:
-	$(MAKE) -f CMakeFiles/main.cpp.dir/build.make CMakeFiles/main.cpp.dir/clean
-.PHONY : CMakeFiles/main.cpp.dir/clean
+.PHONY : BattleOfRaces
 
 # clean rule for target.
-clean: CMakeFiles/main.cpp.dir/clean
+CMakeFiles/BattleOfRaces.dir/clean:
+	$(MAKE) -f CMakeFiles/BattleOfRaces.dir/build.make CMakeFiles/BattleOfRaces.dir/clean
+.PHONY : CMakeFiles/BattleOfRaces.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/BattleOfRaces.dir/clean
 
 .PHONY : clean
 
@@ -144,7 +145,7 @@ lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/all: lib/googletest-m
 lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/all: lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/build.make lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) -f lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/build.make lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/karen/CLionProjects/BattleOfRaces/CMakeFiles --progress-num=3,4 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/karen/CLionProjects/BattleOfRaces/CMakeFiles --progress-num=31,32 "Built target gmock_main"
 .PHONY : lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Include target in all.
@@ -181,7 +182,7 @@ clean: lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/clean
 lib/googletest-master/googlemock/CMakeFiles/gmock.dir/all: lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f lib/googletest-master/googlemock/CMakeFiles/gmock.dir/build.make lib/googletest-master/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) -f lib/googletest-master/googlemock/CMakeFiles/gmock.dir/build.make lib/googletest-master/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/karen/CLionProjects/BattleOfRaces/CMakeFiles --progress-num=1,2 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/karen/CLionProjects/BattleOfRaces/CMakeFiles --progress-num=29,30 "Built target gmock"
 .PHONY : lib/googletest-master/googlemock/CMakeFiles/gmock.dir/all
 
 # Include target in all.
@@ -238,7 +239,7 @@ lib/googletest-master/googlemock/gtest/preinstall:
 lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/all: lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/karen/CLionProjects/BattleOfRaces/CMakeFiles --progress-num=7,8 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/karen/CLionProjects/BattleOfRaces/CMakeFiles --progress-num=35,36 "Built target gtest_main"
 .PHONY : lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/all
 
 # Include target in all.
@@ -275,7 +276,7 @@ clean: lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/clean
 lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/karen/CLionProjects/BattleOfRaces/CMakeFiles --progress-num=5,6 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/karen/CLionProjects/BattleOfRaces/CMakeFiles --progress-num=33,34 "Built target gtest"
 .PHONY : lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/all
 
 # Include target in all.

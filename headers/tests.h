@@ -29,7 +29,7 @@
 #include "CFactoryCannon.h"
 #include "CCannonTower.h"
 #include "CFactoryTownHall.h"
-
+#include "CArmy.h"
 
 TEST(CFactoryBarack_Test, create__Test) {
     CBarack *HumanB = CFactoryBarack::create(HumanBarack);
@@ -261,12 +261,9 @@ TEST(DISABLED_CWarrior__Test, move__Test) {
 
 TEST(DISABLED_CWarrior__Test, attack__Test) {
     CWarrior *Warrior = CFactoryInfant::create(HumanInfant);
-    CWarrior *Warrior1 = CFactoryInfant::create(HumanInfant);
-    Warrior->attack(Warrior1);
+    //Warrior->attack(CPoint(0, 0));
     EXPECT_EQ(1, 1); // заготовка на будущее
     delete Warrior;
-    delete Warrior1;
-
 }
 
 TEST(DISABLED_CWizzard__Test, heal__Test) {
@@ -277,4 +274,8 @@ TEST(DISABLED_CWizzard__Test, heal__Test) {
     delete Wizzard;
 }
 
+TEST(CArmy__Test, attack__Test) {
+     CArmy* army = new CArmy;
+    EXPECT_EQ(1,1);
+}
 #endif //BATTLEOFRACES_TESTS_H

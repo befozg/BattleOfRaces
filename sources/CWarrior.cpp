@@ -3,14 +3,17 @@
 //
 
 #include "CWarrior.h"
+#include "IComponentTest.h"
 
-
-virtual void CWarrior::move(const CPoint& _coordinates) {
+void CWarrior::move(const CPoint& _coordinates) {
     // нужен БФС и работа с графами для достижения точки
 
 }
 
-virtual void CWarrior::attack(const CUnit* _target) {
+void CWarrior::attack(CUnit* _target) {
+    _target->setHealth(getHealth() - this->Power);
+    if(_target->getHealth() <= 0)
+        delete _target;
     // если враг есть в зоне поражения, то производим атаку: за один ход у врага убирается кол-во
     // HP равное значению Power
 

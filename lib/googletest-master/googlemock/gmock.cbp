@@ -24,6 +24,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add option="-DWITH_TEST"/>
 					<Add directory="/home/karen/CLionProjects/BattleOfRaces/lib/googletest-master/googlemock/include"/>
 					<Add directory="/home/karen/CLionProjects/BattleOfRaces/lib/googletest-master/googlemock"/>
 					<Add directory="/home/karen/CLionProjects/BattleOfRaces/lib/googletest-master/googletest/include"/>
@@ -51,6 +52,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add option="-DWITH_TEST"/>
 					<Add directory="/home/karen/CLionProjects/BattleOfRaces/lib/googletest-master/googlemock/include"/>
 					<Add directory="/home/karen/CLionProjects/BattleOfRaces/lib/googletest-master/googlemock"/>
 					<Add directory="/home/karen/CLionProjects/BattleOfRaces/lib/googletest-master/googletest/include"/>
@@ -78,6 +80,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add option="-DWITH_TEST"/>
 					<Add directory="/home/karen/CLionProjects/BattleOfRaces/lib/googletest-master/googlemock/include"/>
 					<Add directory="/home/karen/CLionProjects/BattleOfRaces/lib/googletest-master/googlemock"/>
 					<Add directory="/home/karen/CLionProjects/BattleOfRaces/lib/googletest-master/googletest/include"/>
@@ -105,6 +108,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add option="-DWITH_TEST"/>
 					<Add directory="/home/karen/CLionProjects/BattleOfRaces/lib/googletest-master/googlemock/include"/>
 					<Add directory="/home/karen/CLionProjects/BattleOfRaces/lib/googletest-master/googlemock"/>
 					<Add directory="/home/karen/CLionProjects/BattleOfRaces/lib/googletest-master/googletest/include"/>
@@ -132,6 +136,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add option="-DWITH_TEST"/>
 					<Add directory="/home/karen/CLionProjects/BattleOfRaces/lib/googletest-master/googletest/include"/>
 					<Add directory="/home/karen/CLionProjects/BattleOfRaces/lib/googletest-master/googletest"/>
 					<Add directory="/usr/include/c++/7"/>
@@ -157,6 +162,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add option="-DWITH_TEST"/>
 					<Add directory="/home/karen/CLionProjects/BattleOfRaces/lib/googletest-master/googletest/include"/>
 					<Add directory="/home/karen/CLionProjects/BattleOfRaces/lib/googletest-master/googletest"/>
 					<Add directory="/usr/include/c++/7"/>
@@ -182,6 +188,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add option="-DWITH_TEST"/>
 					<Add directory="/home/karen/CLionProjects/BattleOfRaces/lib/googletest-master/googletest/include"/>
 					<Add directory="/home/karen/CLionProjects/BattleOfRaces/lib/googletest-master/googletest"/>
 					<Add directory="/usr/include/c++/7"/>
@@ -207,6 +214,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add option="-DWITH_TEST"/>
 					<Add directory="/home/karen/CLionProjects/BattleOfRaces/lib/googletest-master/googletest/include"/>
 					<Add directory="/home/karen/CLionProjects/BattleOfRaces/lib/googletest-master/googletest"/>
 					<Add directory="/usr/include/c++/7"/>
