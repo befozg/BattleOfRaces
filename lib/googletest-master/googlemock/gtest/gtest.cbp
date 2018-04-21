@@ -18,13 +18,12 @@
 				</MakeCommands>
 			</Target>
 			<Target title="gtest_main">
-				<Option output="/home/karen/CLionProjects/BattleOfRaces/lib/googletest-master/googlemock/gtest/libgtest_maind.a" prefix_auto="0" extension_auto="0"/>
+				<Option output="/home/karen/CLionProjects/BattleOfRaces/lib/googletest-master/googlemock/gtest/libgtest_main.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/karen/CLionProjects/BattleOfRaces/lib/googletest-master/googlemock/gtest"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DWITH_TEST"/>
 					<Add directory="/home/karen/CLionProjects/BattleOfRaces/lib/googletest-master/googletest/include"/>
 					<Add directory="/home/karen/CLionProjects/BattleOfRaces/lib/googletest-master/googletest"/>
 					<Add directory="/usr/include/c++/7"/>
@@ -44,13 +43,12 @@
 				</MakeCommands>
 			</Target>
 			<Target title="gtest_main/fast">
-				<Option output="/home/karen/CLionProjects/BattleOfRaces/lib/googletest-master/googlemock/gtest/libgtest_maind.a" prefix_auto="0" extension_auto="0"/>
+				<Option output="/home/karen/CLionProjects/BattleOfRaces/lib/googletest-master/googlemock/gtest/libgtest_main.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/karen/CLionProjects/BattleOfRaces/lib/googletest-master/googlemock/gtest"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DWITH_TEST"/>
 					<Add directory="/home/karen/CLionProjects/BattleOfRaces/lib/googletest-master/googletest/include"/>
 					<Add directory="/home/karen/CLionProjects/BattleOfRaces/lib/googletest-master/googletest"/>
 					<Add directory="/usr/include/c++/7"/>
@@ -70,13 +68,12 @@
 				</MakeCommands>
 			</Target>
 			<Target title="gtest">
-				<Option output="/home/karen/CLionProjects/BattleOfRaces/lib/googletest-master/googlemock/gtest/libgtestd.a" prefix_auto="0" extension_auto="0"/>
+				<Option output="/home/karen/CLionProjects/BattleOfRaces/lib/googletest-master/googlemock/gtest/libgtest.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/karen/CLionProjects/BattleOfRaces/lib/googletest-master/googlemock/gtest"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DWITH_TEST"/>
 					<Add directory="/home/karen/CLionProjects/BattleOfRaces/lib/googletest-master/googletest/include"/>
 					<Add directory="/home/karen/CLionProjects/BattleOfRaces/lib/googletest-master/googletest"/>
 					<Add directory="/usr/include/c++/7"/>
@@ -96,13 +93,12 @@
 				</MakeCommands>
 			</Target>
 			<Target title="gtest/fast">
-				<Option output="/home/karen/CLionProjects/BattleOfRaces/lib/googletest-master/googlemock/gtest/libgtestd.a" prefix_auto="0" extension_auto="0"/>
+				<Option output="/home/karen/CLionProjects/BattleOfRaces/lib/googletest-master/googlemock/gtest/libgtest.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/karen/CLionProjects/BattleOfRaces/lib/googletest-master/googlemock/gtest"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DWITH_TEST"/>
 					<Add directory="/home/karen/CLionProjects/BattleOfRaces/lib/googletest-master/googletest/include"/>
 					<Add directory="/home/karen/CLionProjects/BattleOfRaces/lib/googletest-master/googletest"/>
 					<Add directory="/usr/include/c++/7"/>
