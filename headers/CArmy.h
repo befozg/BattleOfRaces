@@ -12,31 +12,12 @@
 
 class CArmy : public IComponent {
 public:
-    virtual CWarrior* getChild(int _number) {
-        if (_number < warriors.size()) {
-            return warriors[_number];
-        }
-    }
 
-    virtual void move(CPoint _coordinates) {
-        for (int i = 0; i < warriors.size(); ++i){
-            warriors[i]->move(_coordinates);
-        }
-    }
-    virtual void add(CWarrior *_warrior) {
-        warriors.push_back(_warrior);
-    }
-
-    virtual void remove(CWarrior *_warrior) {
-        warriors.erase(std::remove(warriors.begin(), warriors.end(), _warrior), warriors.end());
-    }
-
-    virtual void attack(const CPoint _coordinates) {
-        for (int i = 0; i < warriors.size(); ++i){
-            warriors[i]->attack(_coordinates);
-        }
-    }
-
+    virtual CWarrior* getChild(int _number);
+    virtual void attack(const CUnit* _target);
+    virtual void add(CWarrior* _warrior);
+    virtual void move(CPoint& _coordinates);
+    virtual void remove(CWarrior* _warrior);
 private:
     std::vector<CWarrior*> warriors;
     std::string race;

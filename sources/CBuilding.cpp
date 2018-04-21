@@ -4,6 +4,6 @@
 
 #include "CBuilding.h"
 
-void CBuilding::attack(const CPoint &_coordinates) {
+void CBuilding::attack(const CUnit* _target) {
     //
 }
