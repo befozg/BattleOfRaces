@@ -29,6 +29,7 @@
 #include "CFactoryCannon.h"
 #include "CCannonTower.h"
 #include "CFactoryTownHall.h"
+#include "CArmy.h"
 
 
 TEST(CFactoryBarack_Test, create__Test) {
@@ -273,6 +274,18 @@ TEST(DISABLED_CWizzard__Test, heal__Test) {
     EXPECT_EQ(1, 1); // заготовка на будущее
 
     delete Wizzard;
+}
+
+TEST(CArmy__Test, attack__Test) {
+    std::string race = "Human";
+    CArmy *Army = new CArmy(race);
+    CWarrior *inf = CFactoryInfant::create(HumanInfant);
+    CWarrior *arch = CFactoryArcher::create(HumanArcher);
+    CWarrior *mag = CFactoryWizzard::create(HumanWizzard);
+    Army->add(inf); Army->add(arch); Army->add(mag);
+    CBuilding *enemyTH = CFactoryTownHall::create(OrcTownHall);
+    Army->attack(enemyTH);
+    EXPECT_EQ(enemyTH->getHealth(), 4990);
 }
 
 #endif //BATTLEOFRACES_TESTS_H

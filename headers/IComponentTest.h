@@ -9,7 +9,7 @@
 
 class IComponentTest {
 public:
-    virtual void attack(const CUnit* _target) = 0;
+    virtual void attack(CUnit* _target) = 0;
     virtual void move(const CPoint& _coordinates) = 0;
 };
 

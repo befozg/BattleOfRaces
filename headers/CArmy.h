@@ -13,9 +13,14 @@
 
 class CArmy : public IComponentTest {
 public:
+    CArmy(std::string &_race){
+        race = _race;
+    }
+    ~CArmy() = default;
+
     virtual CWarrior* getChild(int _number);
-    virtual void attack(const CUnit* _target) = 0;
-    virtual void move(CPoint& _coordinates) = 0;
+    virtual void attack(CUnit* _target);
+    virtual void move(const CPoint& _coordinates);
     virtual void add(CWarrior* _warrior);
     virtual void remove(CWarrior* _warrior);
 private:

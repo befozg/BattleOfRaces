@@ -10,10 +10,11 @@ void CWarrior::move(const CPoint& _coordinates) {
 
 }
 
-void CWarrior::attack(const CUnit* _target) {
-    // если враг есть в зоне поражения, то производим атаку: за один ход у врага убирается кол-во
-    // HP равное значению Power
-
+void CWarrior::attack(CUnit* _target) {
+    _target->setHealth(_target->getHealth() - this->Power);
+    if (_target->getHealth() <= 0){
+        delete _target;
+    }
 }
 
 int CWarrior::getSpeed() {

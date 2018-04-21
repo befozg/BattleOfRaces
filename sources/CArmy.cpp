@@ -10,7 +10,7 @@ CWarrior* CArmy::getChild(int _number) {
     }
 }
 
-void CArmy::move(CPoint& _coordinates) {
+void CArmy::move(const CPoint& _coordinates) {
     for (int i = 0; i < warriors.size(); ++i){
         warriors[i]->move(_coordinates);
     }
@@ -23,7 +23,7 @@ void CArmy::remove(CWarrior* _warrior) {
     warriors.erase(std::remove(warriors.begin(), warriors.end(), _warrior), warriors.end());
 }
 
-void CArmy::attack(const CUnit* _target) {
+void CArmy::attack(CUnit* _target) {
    for (int i = 0; i < warriors.size(); ++i){
        warriors[i]->attack(_target);
    }

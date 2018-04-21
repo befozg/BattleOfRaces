@@ -14,7 +14,7 @@ public:
     ~CWarrior() {};
 
     virtual void move(const CPoint& _coordinates);
-    virtual void attack(const CUnit* _target);
+    virtual void attack(CUnit* _target);
 
     int getSpeed();
     void setSpeed(int _speed);
