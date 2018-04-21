@@ -6,14 +6,15 @@
 #define BATTLEOFRACES_IWARRIOR_H
 
 #include "CUnit.h"
+#include "IComponent.h"
 
-class CWarrior : public CUnit {
+class CWarrior: public IComponent, public CUnit {
 public:
     CWarrior() = default;
     ~CWarrior() {};
 
-    void move(const CPoint _coordinates);
-    virtual void attack(const CPoint &_coordinates);
+    virtual void move(const CPoint& _coordinates);
+    virtual void attack(const CUnit* _target);
 
     int getSpeed();
     void setSpeed(int _speed);
