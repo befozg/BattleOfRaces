@@ -8,10 +8,9 @@
 #include "IComponentTest.h"
 #include <vector>
 #include <string>
-#include <algorithm>
 #include "CWarrior.h"
 
-class CArmy : public IComponentTest {
+class CArmy : public CUnit, IComponentTest {
 public:
     CArmy(std::string &_race);
     ~CArmy() = default;
@@ -21,6 +20,7 @@ public:
     virtual void move(const CPoint& _coordinates);
     virtual void add(CWarrior* _warrior);
     virtual void remove(CWarrior* _warrior);
+
 private:
     std::vector<CWarrior*> warriors;
     std::string race;

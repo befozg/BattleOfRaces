@@ -4,7 +4,7 @@
 #include "CTownHall.h"
 
 const int TownHalLevel = 1;
-const int TownHallHealth = 5000;
+const int TownHallHealth = 1000;
 const int TownAttackDistance = 0;
 const int TownHallPower = 0;
 

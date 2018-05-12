@@ -1,12 +1,8 @@
-#include "tests.h"
-#ifdef WITH_TEST
-#define INIT_GTEST(argc, argv) \
-::testing::InitGoogleTest(&argc, argv);\
-return RUN_ALL_TESTS();
-#else
-#define INIT_GTEST(argc, argv)
-#endif
+#include "CGame.h"
 
-int main(int argc, char **argv) {
-    INIT_GTEST(argc, argv);
+int main() {
+    CGame game;
+    game.process();
+
+    return 0;
 }

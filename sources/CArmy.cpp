@@ -3,6 +3,8 @@
 //
 
 #include "CArmy.h"
+#include "algorithm"
+
 CArmy::CArmy(std::string &_race) {
         race = _race;
 }
@@ -27,7 +29,7 @@ void CArmy::remove(CWarrior* _warrior) {
 }
 
 void CArmy::attack(CUnit* _target) {
-   for (int i = 0; i < warriors.size(); ++i){
+    for (int i = 0; i < warriors.size(); ++i){
        warriors[i]->attack(_target);
    }
 }
