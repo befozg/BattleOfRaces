@@ -1,0 +1,10 @@
+# CMake generation dependency list for this directory.
+C:/Users/dimap/CLionProjects/BattleOfRaces/lib/googletest-master/googlemock/CMakeLists.txt
+C:/Program Files/CMake/share/cmake-3.11/Modules/FindThreads.cmake
+C:/Program Files/CMake/share/cmake-3.11/Modules/CheckLibraryExists.cmake
+C:/Program Files/CMake/share/cmake-3.11/Modules/CheckSymbolExists.cmake
+C:/Program Files/CMake/share/cmake-3.11/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.11/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.11/Modules/FindPackageMessage.cmake
+C:/Users/dimap/CLionProjects/BattleOfRaces/lib/googletest-master/googlemock/cmake/gmock.pc.in
+C:/Users/dimap/CLionProjects/BattleOfRaces/lib/googletest-master/googlemock/cmake/gmock_main.pc.in

@@ -1,0 +1,10 @@
+cmake-build-debug/
+.idea/
+gmock.pc
+gmock_main.pc
+Makefile
+gtest_main.pc
+gtest.pc
+BattleOfRaces.cbp
+cmake_install.cmake
+CMakeCache.txt
